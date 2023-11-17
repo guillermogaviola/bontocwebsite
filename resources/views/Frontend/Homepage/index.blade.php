@@ -1,7 +1,5 @@
 @extends('layouts.frontend')
-
 @section('content')
-
 <div class="container">
         <div class="row">
         <div class="section">
@@ -393,12 +391,8 @@
                                 <a class="h6 m-0" href="">"Free Operation Tuli para Pogi"</a>
                             </div>
                         </div>
-
                     </div>
-                    <!-- Popular News End -->
                 </div>
 </div>
-
 </div>
- 
 @endsection

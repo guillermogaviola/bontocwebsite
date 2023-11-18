@@ -26,7 +26,7 @@
             <div class="col-lg-4">
                 <a href="" class="navbar-brand d-none d-lg-block">
                     <br>
-                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Ne</span>ws</h1>
+                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Upcoming</span>Updates</h1>
                 </a>
             </div>
         </div>
@@ -34,20 +34,20 @@
 
 <div class="row mb-3">
 <?php
-    foreach($news as $newss){
+    foreach($upcomingupdates as $upcomingupdatess){
 ?>
         <div class="col-lg-4 mb-3">
             <div class="row">
                 <div class="col-lg-12">
-                    <img src="../uploads/<?php echo $newss->file; ?>" width="350px" height="200px">
+                    <img src="../uploads/<?php echo $upcomingupdatess->file; ?>" width="350px" height="200px">
                 </div>
                 <div class="col-lg-12">
-                     <a href="#"><h5><?php echo $newss->title; ?></h5></a>
+                     <a href="#"><h5><?php echo $upcomingupdatess->title; ?></h5></a>
                 </div>
                 <div class="col-lg-12">
                     <p style="text-align: justify;">
                         <?php
-                            $str = $newss->description;
+                            $str = $upcomingupdatess->description;
                             if (strlen($str) > 30)
                             {
                                 $str = substr($str, 0, 500) . '.';

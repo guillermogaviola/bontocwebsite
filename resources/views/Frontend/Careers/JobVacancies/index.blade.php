@@ -20,21 +20,41 @@
 
 
 
-<div class="container">
+<div class="container mb-5">
 
 <br>
 <br>
-
-@if(isset($jobvacancies))
-        <h1 style="text-align: center;">
-            <span style="color: #046631;">{{$jobvacancies->title}}</span>
-        </h1>
-        <br>
-        <br>
-        <div class="siteorigin-widget-tinymce textwidget">
-            {!! $jobvacancies->description !!}
+<div class="row mb-3">
+<?php
+    foreach($jobvacancies as $job){
+?>
+        <div class="col-lg-4 mb-3">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="../uploads/<?php echo $job->file; ?>" width="350px" height="200px">
+                </div>
+                <div class="col-lg-12">
+                     <a href="#"><h5><?php echo $job->title; ?></h5></a>
+                </div>
+                <div class="col-lg-12">
+                    <p style="text-align: justify;">
+                        <?php
+                            $str = $job->description;
+                            if (strlen($str) > 30)
+                            {
+                                $str = substr($str, 0, 500) . '.';
+                            }
+                            echo $str;
+                        ?>
+                    </p>
+                </div>
+            </div>
         </div>
-@endif
-  
+
+
+<?php
+    }
+?>
+</div>
 </div>
 @endsection

@@ -1,3 +1,8 @@
+<style>
+    .nav-link{
+        color:white !important;
+    }
+</style>
 <div class="row">
     <div class="container-fluid p-0 mb-3">
         <nav class="navbar navbar-expand-lg bg-success navbar-light py-2 py-lg-0 px-lg-5">
@@ -8,9 +13,9 @@
             </button>
             <div class="navbar-collapse justify-content-between px-0 px-lg-3 collapse show bg-success" id="navbarCollapse" style="">
                 <div class="navbar-nav mr-auto py-0">
-                    <a href="{{ route('homepage')}}" class="nav-item nav-link" style="color: black;">Home</a>
+                    <a href="{{ route('homepage')}}" class="nav-item nav-link">Home</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: black;">About Us</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="{{route('about.location')}}" class="dropdown-item">Location</a>
                             <a href="{{route('about.history')}}" class="dropdown-item">History</a>
@@ -22,14 +27,14 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: black;">News and Updates</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">News and Updates</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="{{route('newsandupdates.news')}}" class="dropdown-item">News</a>
-                            <a href="{{route('newsandupdates.upcomingevents')}}" class="dropdown-item">Upcoming Events</a>
+                            <a href="{{route('newsandupdates.upcomingupdates')}}" class="dropdown-item">Upcoming Updates</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: black;">Services</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="{{route('services.mayorsoffice')}}" class="dropdown-item">Mayor's Office</a>
                             <a href="{{route('services.citizenscharter')}}" class="dropdown-item">Citizen's Charter</a>
@@ -37,26 +42,26 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: black;">Transparency</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Transparency</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="{{route('transparency.municipalordinances')}}" class="dropdown-item">Municipal Ordinances</a>
                             <a href="{{route('transparency.resolutions')}}" class="dropdown-item">Resolutions</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: black;">Tourism</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tourism</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="{{route('tourism.bontocattractions')}}" class="dropdown-item">Bontoc Attractions</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: black;">Careers</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Careers</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="{{route('careers.jobvacancies')}}" class="dropdown-item">Job Vacancies</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: black;">Others</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Others</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="{{route('others.downloadableforms')}}" class="dropdown-item">Downloadable Forms</a>
                             <a href="{{route('others.gallery')}}" class="dropdown-item">Gallery</a>
@@ -72,9 +77,5 @@
                 </div>
             </div>
         </nav>
-        
-
     </div>
-    
-
 </div>

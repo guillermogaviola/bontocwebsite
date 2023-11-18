@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Favicon -->
-    <link href="{{asset('resources/img/favicon.ico')}}" rel="icon">
+    <link href="{{asset('resources/img/bontoclogonobg.png')}}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="{{asset('resources/https://fonts.gstatic.com')}}">

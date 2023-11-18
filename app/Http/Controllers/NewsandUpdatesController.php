@@ -11,49 +11,59 @@ class NewsandUpdatesController extends Controller
 {
     public function indexNews() 
     {
-        $news = NewsandUpdates_news::first();
+        $news = NewsandUpdates_news::all();
         return view('admin.newsandupdates.news.index',[
                 'news' => $news
         ]);
     }
 
-   public function addNews(Request $request) 
+  public function addNews(Request $request) 
     {
-        if ($request->id) {
-            $update = NewsandUpdates_news::find($request->id);
-            $update->title = $request->title;
-            $update->description = $request->description;
-            $update->save();
-        } else {
+        // if ($request->id) {
+        //     $update = Careers_jobvacancies::find($request->id);
+        //     $update->title = $request->title;
+        //     $update->description = $request->description;
+        //     $update->save();
+        // } else {
             $formsave = new NewsandUpdates_news();
             $formsave->title = $request->title;
             $formsave->description = $request->description;
+            $file = $request->file('file');
+            $filename = $file->hashName();
+            $location = 'uploads';
+            $file->move($location,$filename);
+            $formsave->file = $filename;
             $formsave->save();
-        }
+        // }
         return redirect()->back();
     }
 
-        public function indexUpcomingUpdates() 
+    public function indexUpcomingUpdates() 
     {
-        $upcomingupdates = NewsandUpdates_upcomingupdates::first();
+        $upcomingupdates = NewsandUpdates_upcomingupdates::all();
         return view('admin.newsandupdates.upcomingupdates.index',[
                 'upcomingupdates' => $upcomingupdates
         ]);
     }
 
-   public function addUpcomingUpdates(Request $request) 
+    public function addUpcomingUpdates(Request $request) 
     {
-        if ($request->id) {
-            $update = NewsandUpdates_upcomingupdates::find($request->id);
-            $update->title = $request->title;
-            $update->description = $request->description;
-            $update->save();
-        } else {
+        // if ($request->id) {
+        //     $update = Careers_jobvacancies::find($request->id);
+        //     $update->title = $request->title;
+        //     $update->description = $request->description;
+        //     $update->save();
+        // } else {
             $formsave = new NewsandUpdates_upcomingupdates();
             $formsave->title = $request->title;
             $formsave->description = $request->description;
+            $file = $request->file('file');
+            $filename = $file->hashName();
+            $location = 'uploads';
+            $file->move($location,$filename);
+            $formsave->file = $filename;
             $formsave->save();
-        }
+        // }
         return redirect()->back();
     }
 }

@@ -22,7 +22,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
      //News and Updates
      Route::get('/newsandupdates/news', 'Frontend\NewsandUpdatesController@indexNews')->name('newsandupdates.news');
-     Route::get('/newsandupdates/upcomingevents', 'Frontend\NewsandUpdatesController@indexUpcomingEvents')->name('newsandupdates.upcomingevents');
+     Route::get('/newsandupdates/upcomingupdates', 'Frontend\NewsandUpdatesController@indexUpcomingUpdates')->name('newsandupdates.upcomingupdates');
 
      //Services
      Route::get('/services/mayorsoffice', 'Frontend\ServicesController@indexMayorsOffice')->name('services.mayorsoffice');
@@ -32,7 +32,6 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
      //Transparency
      Route::get('/transparency/municipalordinances', 'Frontend\TransparencyController@indexMunicipalOrdinances')->name('transparency.municipalordinances');
      Route::get('/transparency/resolutions', 'Frontend\TransparencyController@indexResolutions')->name('transparency.resolutions');
-
 
      //Tourism
      Route::get('/tourism/bontocattractions', 'Frontend\TourismController@indexBontocAttractions')->name('tourism.bontocattractions');
@@ -55,17 +54,14 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
             Route::post('/login', 'LoginController@login')->name('login.perform');
 
         //Register Routes
-         Route::get('/register', 'RegisterController@show')->name('register.show');
-         Route::post('/register', 'RegisterController@register')->name('register.perform');
+            Route::get('/register', 'RegisterController@show')->name('register.show');
+            Route::post('/register', 'RegisterController@register')->name('register.perform');
      });
 
     Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
 
         // Dashboard
         Route::get('/dashboard', 'DashboardController@index')->name('admin.dashboard');
-
-        
-
 
         //Admin Dashboard About Us
         Route::get('/aboutus/history', 'AboutUsController@indexhistory')->name('admin.aboutus.history');
@@ -97,16 +93,18 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::get('/services/mayorsoffice', 'ServicesController@indexmayorsoffice')->name('admin.services.mayorsoffice');
         Route::post('/services/mayorsoffice/add', 'ServicesController@addmayorsoffice')->name('admin.services.mayorsoffice.add');
 
-
         //Admin Dashboard Tourism
         Route::get('/tourism/bontocattractions', 'TourismController@indexbontocattractions')->name('admin.tourism.bontocattractions');
-        Route::post('/tourism/bontocattractions/add', 'TransparencyController@addbontocattractions')->name('admin.transparency.bontocattractions.add');
+
+        Route::post('/tourism/bontocattractions/add', 'TourismController@addbontocattractions')->name('admin.tourism.bontocattractions.add');
 
         //Admin News and Updates Others
         Route::get('/newsandupdates/news', 'NewsandUpdatesController@indexnews')->name('admin.newsandupdates.news');
-        Route::post('/newsandupdates/news/add', 'TransparencyController@addnews')->name('admin.transparency.news.add');
+        
+        Route::post('/newsandupdates/news/add', 'NewsandUpdatesController@addnews')->name('admin.newsandupdates.news.add');
+
         Route::get('/newsandupdates/upcomingupdates', 'NewsandUpdatesController@indexupcomingupdates')->name('admin.newsandupdates.upcomingupdates');
-        Route::post('/newsandupdates/upcomingupdates/add', 'TransparencyController@addupcomingupdates')->name('admin.newsandupdates.upcomingupdates.add');
+        Route::post('/newsandupdates/upcomingupdates/add', 'NewsandUpdatesController@addupcomingupdates')->name('admin.newsandupdates.upcomingupdates.add');
 
 
         //Admin Dashboard Transparency

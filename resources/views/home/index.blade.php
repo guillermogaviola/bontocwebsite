@@ -1,4 +1,4 @@
-<!-- @extends('layouts.default')
+@extends('layouts.default')
 
 @section('content')
     
@@ -16,4 +16,4 @@
         @endguest
     </div>
 
-@endsection -->
+@endsection

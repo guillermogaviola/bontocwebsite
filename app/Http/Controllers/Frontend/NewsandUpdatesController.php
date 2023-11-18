@@ -12,18 +12,18 @@ class NewsandUpdatesController extends Controller
 {
     public function indexNews()
     {
-        $news = NewsandUpdates_news::first();
+        $news = NewsandUpdates_news::all();
             return view('Frontend.newsandupdates.news.index',[
                     'news' => $news
             ]);
-     }
+    }
 
 
-     public function indexUpcomingUpdates()
+    public function indexUpcomingUpdates()
     {
-        $upcomingupdates = NewsandUpdates_upcomingupdates::first();
-            return view('Frontend.NewsandUpdates.UpcomingUpdates.index',[
+        $upcomingupdates = NewsandUpdates_upcomingupdates::all();
+            return view('Frontend.newsandupdates.upcomingupdates.index',[
                     'upcomingupdates' => $upcomingupdates
             ]);
-     }
+    }
 }

@@ -1,4 +1,4 @@
-<!-- <header class="p-3 bg-dark text-white">
+<header class="p-3 bg-dark text-white">
 
 
       @auth
@@ -21,4 +21,4 @@
 
     </div>
   </div>
-</header> -->
+</header>

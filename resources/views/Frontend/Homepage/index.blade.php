@@ -2,7 +2,7 @@
 @section('content')
 <div class="container-fluid">
     <div class="row">
-        <div class="lg-12">
+        <div class="col-lg-12">
             <div id="slides" class="carousel slide" data-ride="carousel">
                 <ul class="carousel-indicators">
                     <li data-target="#slides" data-slide-to="0" class="active"></li>
@@ -88,17 +88,10 @@
                     </div>
                 </div>
             </div>
-                <a class="carousel-control-prev" href="#slides" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#slides" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
             </div>
             <br>
-            <div class="container-fluid p-0 mb-3">
-                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBbtartsDWandererOfficial%2Fvideos%2F309437914951962%2F&show_text=true&width=560&t=0" width="100%" height="100%">
-                </iframe> 
+            <div class="video-container">
+               <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBbtartsDWandererOfficial%2Fvideos%2F309437914951962%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
             </div>       
         </div>
 

@@ -1,8 +1,27 @@
 <style>
-    .nav-link{
-        color:white !important;
-    }
+
+.nav-link{
+    color:white !important;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    width: 100%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 </style>
+
+
 <div class="row">
     <div class="container-fluid p-0 mb-3">
         <nav class="navbar navbar-expand-lg bg-success navbar-light py-2 py-lg-0 px-lg-5">

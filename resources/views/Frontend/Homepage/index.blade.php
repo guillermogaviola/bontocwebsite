@@ -101,10 +101,28 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                                <h3 class="m-0">Municipality of Bontoc Celebrates World Mental Health Month with Launch of Project NOEL (Non-Judgmental Outreach and Emphatic Lifting)</h3>
+                                <h3 class="m-0"></h3>
                                 <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
                             </div>
                         </div>
+                        @foreach($news as $value)
+                            <div class="col-lg-2">
+                                <div class="position-relative mb-3">
+                                    <img class="img-fluid w-100" src="/{{ $value->image }}" style="object-fit: cover;">
+                                    <div class="overlay position-relative bg-light">
+                                        <div class="mb-2" style="font-size: 14px;">
+                                            <a href="">{{ $value->title}}</a>
+                                            <span class="px-1">/</span>
+                                            <span>October 27, 2023</span>
+                                        </div>
+                                        <a class="h6" href="">Bontoc, October 26, 2023 - The Municipality of Bontoc, under the</a>
+                                        <p class="m-0">exemplary leadership of Mayor Noel E. Alinsub, marked the World Mental Health Month with a momentous celebration. The event, spearheaded by the dedicated Mental Health Program Coordinator, Ms. Myra Luz Maunes-Gorduiz, in collaboration with the Municipal Health Coordinator, Dr. Eva Ceniza-Padalapat, brought together a range of stakeholders to launch the innovative Mental Health Project known as Project NOEL (Non-Judgmental Outreach and Emphatic Lifting).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+
+
                         <div class="col-lg-2">
                             <div class="position-relative mb-3">
                                 <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395160674_302999195830491_8889843830936073855_n.jpg') }}" style="object-fit: cover;">

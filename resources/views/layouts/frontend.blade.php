@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
-    <link rel="icon" href="{{asset('resources/img/bontoclogonobg.png')}}" sizes="32x32" />
+    <link rel="icon" href="{{ asset('resources/img/bontoclogonobg.png')}}" sizes="32x32" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -86,9 +86,9 @@
             </ul>
         <br>
             <div>
-                <a href="#"><img height="100" width="100" src="http://bntcwbst.test/resources/img/transparency-seal.png
+                <a href="#"><img height="100" width="100" src="{{ asset('resources/img/transparency-seal.png')}}
                 "></a>
-                <a href="#"><img height="100" width="100" src="http://bntcwbst.test/resources/img/bontoclogonobg.png"></a>
+                <a href="#"><img height="100" width="100" src="{{ asset('resources/img/bontoclogonobg.png')}}"></a>
             </div>
         <br>
         <hr>

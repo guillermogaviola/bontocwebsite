@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <form method="POST" action="{{route('admin.newsandupdates.news.add')}}" enctype="multipart/form-data">
-            @csrf
+          @csrf
             <div class="row card p-5">
                 <div class="bg-light p-5 rounded">
                     <h2>News</h2>
@@ -25,12 +25,14 @@
                         @else
                          <textarea id="myTextarea" name="description" style="width: 100%;"></textarea>
                         @endif
-                        
-                    </div>
+                      </div>
                     <div class="form-group">
                         <label class="text-black">Featured Image</label>
                         <input type="file" name="file" class="form-control">
                     </div>
+                    @foreach($news as $new)
+                      <img src="{{ $news->image }}">
+                    @endforeach
                     <div>
                     <br>
                         <button type="submit" class="btn btn-primary btn-sm">Save</button>

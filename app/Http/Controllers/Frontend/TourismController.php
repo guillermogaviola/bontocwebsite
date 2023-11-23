@@ -12,7 +12,7 @@ class TourismController extends Controller
     public function indexBontocAttractions()
     {
         $bontocattractions = Tourism_bontocattractions::all();
-            return view('Frontend.tourism.bontocattractions.index',[
+            return view('Frontend.Tourism.BontocAttractions.index',[
                     'bontocattractions' => $bontocattractions
             ]);
     }

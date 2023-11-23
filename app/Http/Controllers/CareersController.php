@@ -26,11 +26,6 @@ class CareersController extends Controller
             $formsave = new Careers_jobvacancies();
             $formsave->title = $request->title;
             $formsave->description = $request->description;
-            $file = $request->file('file');
-            $filename = $file->hashName();
-            $location = 'uploads';
-            $file->move($location,$filename);
-            $formsave->file = $filename;
             $formsave->save();
         // }
         return redirect()->back();

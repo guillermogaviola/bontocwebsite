@@ -71,11 +71,13 @@ class OthersController extends Controller
             $update = Others_memorandom::find($request->id);
             $update->title = $request->title;
             $update->description = $request->description;
+            
             $update->save();
         } else {
             $formsave = new Others_memorandom();
             $formsave->title = $request->title;
             $formsave->description = $request->description;
+
             $formsave->save();
         }
         return redirect()->back();

@@ -102,7 +102,6 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
         //Admin News and Updates Others
         Route::get('/newsandupdates/news', 'NewsandUpdatesController@indexnews')->name('admin.newsandupdates.news');
-        
         Route::post('/newsandupdates/news/add', 'NewsandUpdatesController@addnews')->name('admin.newsandupdates.news.add');
 
         Route::get('/newsandupdates/upcomingupdates', 'NewsandUpdatesController@indexupcomingupdates')->name('admin.newsandupdates.upcomingupdates');

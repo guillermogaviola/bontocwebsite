@@ -1,5 +1,8 @@
 @extends('layouts.frontend')
+
 @section('content')
+
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
@@ -116,69 +119,12 @@
                                             <span>October 27, 2023</span>
                                         </div>
                                         <a class="h6" href="">Bontoc, October 26, 2023 - The Municipality of Bontoc, under the</a>
-                                        <p class="m-0">exemplary leadership of Mayor Noel E. Alinsub, marked the World Mental Health Month with a momentous celebration. The event, spearheaded by the dedicated Mental Health Program Coordinator, Ms. Myra Luz Maunes-Gorduiz, in collaboration with the Municipal Health Coordinator, Dr. Eva Ceniza-Padalapat, brought together a range of stakeholders to launch the innovative Mental Health Project known as Project NOEL (Non-Judgmental Outreach and Emphatic Lifting).</p>
                                     </div>
                                 </div>
                             </div>
                         @endforeach
 
-
-                        <div class="col-lg-2">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395160674_302999195830491_8889843830936073855_n.jpg') }}" style="object-fit: cover;">
-                                <div class="overlay position-relative bg-light">
-                                    <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">World Mental Health Month</a>
-                                        <span class="px-1">/</span>
-                                        <span>October 27, 2023</span>
-                                    </div>
-                                    <a class="h6" href="">Bontoc, October 26, 2023 - The Municipality of Bontoc, under the</a>
-                                    <p class="m-0">exemplary leadership of Mayor Noel E. Alinsub, marked the World Mental Health Month with a momentous celebration. The event, spearheaded by the dedicated Mental Health Program Coordinator, Ms. Myra Luz Maunes-Gorduiz, in collaboration with the Municipal Health Coordinator, Dr. Eva Ceniza-Padalapat, brought together a range of stakeholders to launch the innovative Mental Health Project known as Project NOEL (Non-Judgmental Outreach and Emphatic Lifting).</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395291630_302999219163822_3887051330293934413_n.jpg') }}" style="object-fit: cover;">
-                                <div class="overlay position-relative bg-light">
-                                    <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">World Mental Health Month</a>
-                                        <span class="px-1">/</span>
-                                        <span>October 27, 2023</span>
-                                    </div>
-                                    <a class="h6" href="">Bontoc, October 26, 2023 - The Municipality of Bontoc, under the</a>
-                                    <p class="m-0">Aiming to destigmatize mental health, raise awareness, and provide vital support and resources for those in need, Project NOEL is a significant step forward in promoting mental well-being within the community. Project NOEL is more than just an acronym, it embodies a commitment to creating a non-judgmental space where individuals can find understanding, support, and the resources necessary to address their mental health challenges. By launching this project, the Municipality of Bontoc has taken a significant stride towards nurturing a community that cares not only for its physical health but also for the mental and emotional well-being of its residents.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395293777_303000109163733_113106439269659089_n.jpg') }}" style="object-fit: cover;">
-                                <div class="overlay position-relative bg-light">
-                                    <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">World Mental Health Month</a>
-                                        <span class="px-1">/</span>
-                                        <span>October 27, 2023</span>
-                                    </div>
-                                    <a class="h6" href="">Bontoc, October 26, 2023 - The Municipality of Bontoc, under the</a>
-                                    <p class="m-0">The successful launch of Project NOEL underscores a collective commitment to mental health, with unwavering support from the Local Government Unit, led by Mayor Noel E. Alinsub. Notable attendees, such as the Local Chief Executive's Special Assistant on Health, Dr. Aileen Dagohoy-Alinsub, and Department of Health representative Ms. Mariza Dolera and SPED Teacher Ms. Emely Aliling-Baslot further enriched the event, demonstrating the convergence of leaders and professionals who deeply recognize the significance of mental well-being.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395312155_303000095830401_5731520755132012313_n.jpg') }}" style="object-fit: cover;">
-                                <div class="overlay position-relative bg-light">
-                                    <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">World Mental Health Month</a>
-                                        <span class="px-1">/</span>
-                                        <span>October 27, 2023</span>
-                                    </div>
-                                    <a class="h6" href="">Bontoc, October 26, 2023 - The Municipality of Bontoc, under the</a>
-                                    <p class="m-0">Project NOEL serves as a beacon of hope for anyone who may be struggling with mental health issues in Bontoc. By creating an environment free from judgment and full of empathy, this project aims to break down the barriers that often prevent individuals from seeking help.</p>
-                                </div>
-                            </div>
-                        </div>
+                    
                         <div class="col-lg-2">
                             <div class="position-relative mb-3">
                                 <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395316821_303000189163725_2409139856403516309_n.jpg') }}" style="object-fit: cover;">

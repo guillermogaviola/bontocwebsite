@@ -13,19 +13,19 @@ class ServicesController extends Controller
      public function indexMayorsOffice()
     {
         $mayorsoffice = Services_mayorsoffice::first();
-        return view('Frontend.services.mayorsoffice.index',[
+        return view('Frontend.Services.MayorsOffice.index',[
                 'mayorsoffice' => $mayorsoffice
         ]);
     }
 
-     public function indexCitizensCharter()
+    //  public function indexCitizensCharter()
 
-    {
-        return view('Frontend.Services.CitizensCharter.index');
-    }
+    // {
+    //     return view('Frontend.Services.CitizensCharter.index');
+    // }
     
-    public function indexBomwasa()
-    {
-    	return view('Frontend.Services.Bomwasa.index');
-    }
+    // public function indexBomwasa()
+    // {
+    // 	return view('Frontend.Services.Bomwasa.index');
+    // }
 }

@@ -26,11 +26,7 @@ class TourismController extends Controller
             $formsave = new Tourism_bontocattractions();
             $formsave->title = $request->title;
             $formsave->description = $request->description;
-            $file = $request->file('file');
-            $filename = $file->hashName();
-            $location = 'uploads';
-            $file->move($location,$filename);
-            $formsave->file = $filename;
+        
             $formsave->save();
         // }
         return redirect()->back();

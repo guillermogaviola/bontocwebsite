@@ -17,7 +17,7 @@ class NewsandUpdatesController extends Controller
         ]);
     }
 
-  public function addNews(Request $request) 
+    public function addNews(Request $request) 
     {
         // if ($request->id) {
         //     $update = Careers_jobvacancies::find($request->id);
@@ -25,6 +25,7 @@ class NewsandUpdatesController extends Controller
         //     $update->description = $request->description;
         //     $update->save();
         // } else {
+
             $formsave = new NewsandUpdates_news();
             $formsave->title = $request->title;
             $formsave->description = $request->description;
@@ -101,11 +102,7 @@ class NewsandUpdatesController extends Controller
             $formsave = new NewsandUpdates_upcomingupdates();
             $formsave->title = $request->title;
             $formsave->description = $request->description;
-            $file = $request->file('file');
-            $filename = $file->hashName();
-            $location = 'uploads';
-            $file->move($location,$filename);
-            $formsave->file = $filename;
+            
             $formsave->save();
         // }
         return redirect()->back();

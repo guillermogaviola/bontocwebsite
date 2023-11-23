@@ -13,7 +13,7 @@ class NewsandUpdatesController extends Controller
     public function indexNews()
     {
         $news = NewsandUpdates_news::all();
-            return view('Frontend.newsandupdates.news.index',[
+            return view('Frontend.NewsandUpdates.News.index',[
                     'news' => $news
             ]);
     }
@@ -22,7 +22,7 @@ class NewsandUpdatesController extends Controller
     public function indexUpcomingUpdates()
     {
         $upcomingupdates = NewsandUpdates_upcomingupdates::all();
-            return view('Frontend.newsandupdates.upcomingupdates.index',[
+            return view('Frontend.NewsandUpdates.UpcomingUpdates.index',[
                     'upcomingupdates' => $upcomingupdates
             ]);
     }

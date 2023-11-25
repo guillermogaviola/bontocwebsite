@@ -2,9 +2,7 @@
 
 @section('content')
 
-
 <div class="container">
-
     <!-- Topbar Start -->
     <div class="container-fluid">
         <div class="row align-items-center py-2 px-lg-5">
@@ -16,21 +14,20 @@
             </div>
         </div>
     </div>
-
-<div class="row mb-3">
-    <div class="col-lg-4 mb-3">
-        <div class="row">
-            <div class="col-lg-12">
-                <img src="/{{ $value->image }}" width="350px" height="200px">
-            </div>
-            <div class="col-lg-12">
-                <a href="#"><h5></h5></a>
-            </div>
-            <div class="col-lg-12">
-                <a href="#"><h5></h5></a>
+    <div class="row mb-3">
+        <div class="col-lg-4 mb-3">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="/{{ $value->image }}" width="350px" height="200px">
+                </div>
+                <div class="col-lg-12">
+                    <a href="#"><h5></h5></a>
+                </div>
+                <div class="col-lg-12">
+                    <a href="#"><h5></h5></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 @endsection

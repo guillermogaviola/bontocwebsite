@@ -9,7 +9,7 @@
                 Upcoming Updates
                 <a href="" class="btn btn-success" style="float: right; margin-top: 5px;">Add Upcoming Updates</a>
               </h5><br><br>
-              <table class="table table-success">
+              <table class="table table-light">
                 <thead>
                   <tr>
                     <th scope="col">ID</th>
@@ -87,9 +87,9 @@
                     </td>
                   </tr>
                   </tbody>
-              </table>
+              </table><br><br>
 
-              <section class="section">
+<section class="section">
   <div class="row">
     <div class="col-lg-12">
       <div class="card">

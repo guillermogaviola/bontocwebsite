@@ -118,7 +118,7 @@
                                             <span class="px-1">/</span>
                                             <span>October 27, 2023</span>
                                         </div>
-                                        <a class="h6" href="">Bontoc, October 26, 2023 - The Municipality of Bontoc, under the</a>
+                                        <a class="h6" href="">{{ $value->description}}</a>
                                     </div>
                                 </div>
                             </div>

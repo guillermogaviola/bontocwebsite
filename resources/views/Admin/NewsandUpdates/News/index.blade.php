@@ -10,7 +10,7 @@
                 <a href="" class="btn btn-success" style="float: right; margin-top: 5px;">Add News</a>
               </h5><br><br>
 
-              <table class="table table-danger">
+              <table class="table-light">
                 <thead>
                   <tr>
                     <th scope="col">ID</th>
@@ -88,7 +88,9 @@
                     </td>
                   </tr>
                   </tbody>
-              </table>
+              </table><br><br>
+
+              
 <section class="section">
   <div class="row">
     <div class="col-lg-12">

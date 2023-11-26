@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::table('newsand_updates_news', function (Blueprint $table) {
             $table->id();
-            $table->string('image')->after('description')->nullable();
+            $table->string('image')->nullable();
             $table->string('title');
-            $table->text('content');
-            $table->string('image'); // Add this line for the image column
+            $table->text('description');
+            $table->timestamps();
         });
     }
 

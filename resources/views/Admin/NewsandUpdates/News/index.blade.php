@@ -102,15 +102,14 @@
             <div class="form-group">
                 <label class="text-black">Title</label>
                   @if(isset($news->title))
-                        <input type="text" hidden="" name="id" class="form-control">
                         <input type="text" name="title" class="form-control" placeholder="Title">
                   @else
-                     <input type="text" name="title" value="" class="form-control" placeholder="">
+                     <input type="text" name="title" value="title" class="form-control" placeholder="">
                   @endif
               </div><br>
               <div class="col-12">
               <label class="form-label text-black">Image</label>
-                <input type="file" class="form-control" name="image_file">
+                <input type="file" class="form-control" name="image">
               </div><br>
               <div class="form-group">
                 <label class="text-black">Description</label>
@@ -122,7 +121,7 @@
               </div><br>
                 <div class="col-md-2" style="margin-bottom: 10px;">
                   <label class="form-label text-black">Date Posted</label>
-                  <input type="date" name="dateposted" value="" class="form-control">
+                  <input type="date" name="date_posted" value="date_posted" class="form-control">
                 </div>
                 <div class="col-12" style="margin-top: 30px;">
                    <button type="submit" class="btn btn-success">Submit</button>

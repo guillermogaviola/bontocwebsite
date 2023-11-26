@@ -34,7 +34,7 @@
             </div>
             <div class="email mb-3"> 
                 <label for="floatingEmail">Email Address</label>
-               <input type="email" class="form-control" name="email" value="{{ old('email') }}" required="required" autofocus>
+               <input type="email" class="form-control" name="email" value="{{ old('email') }}" autofocus>
                
                 @if ($errors->has('email'))
                     <span class="text-danger text-left">{{ $errors->first('email') }}</span>

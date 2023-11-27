@@ -33,15 +33,11 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row" style="background-image: url('{{asset('resources/img/bg.jpg')}}'); background-repeat: no-repeat;background-position: center;background-size: 1400px 500px;">
-                <div class="col-sm-10">
-
-
-
-                    <br>
+        <div class="row" style="background-image: url('{{asset('resources/img/IMG20230719081550.jpg')}}'); background-repeat: no-repeat;background-position: center;background-size: 100% 300%;">
+                <div class="col-sm-10"> <br>
                      <img style="width: 10%; float: left; padding-right: 5px; margin-bottom: 4%;" src="{{asset('resources/img/bontoclogonobg.png')}}">
-                        <h3 style="margin-top: 10px; color: white;">Municipality of Bontoc</h3>
-                        <p class="text-light">Brgy. Poblacion, Bontoc, Southern Leyte, Philippines, 6604</p>
+                        <h3 style="margin-top: 10px; color: #fe6dbc;">Municipality of Bontoc</h3>
+                        <p style="color: #ffffff">Brgy. Poblacion, Bontoc, Southern Leyte, Philippines, 6604</p>
                 </div>
                 <div class="col-sm-2" >
                     <p  style="color: white; padding-right: -1px;">Philippine Standard Time <iframe src="https://oras.pagasa.dost.gov.ph/time_display/time/" allowtransparency="true" scrolling="no" frameborder="0" height="30px" width="100%"></iframe></p>

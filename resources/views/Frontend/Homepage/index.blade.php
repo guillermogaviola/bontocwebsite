@@ -2,9 +2,7 @@
 
 @section('content')
 
-
 <div class="container-fluid">
-    <div class="row">
         <div class="col-lg-12">
             <div id="slides" class="carousel slide" data-ride="carousel">
                 <ul class="carousel-indicators">
@@ -17,77 +15,62 @@
                     <li data-target="#slides" data-slide-to="6" class=""></li>
                     <li data-target="#slides" data-slide-to="8" class=""></li>
                     <li data-target="#slides" data-slide-to="9" class=""></li>
-                    <li data-target="#slides" data-slide-to="10" class=""></li>
                 </ul>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{asset('resources/img/Picture1.jpg')}}" class="img-fluid" style="width: 1500px; height: 500px;">
+                    <img src="{{asset('resources/img/Picture.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
                       <h3></h3>
                       <p></p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/Picture2.png')}}" class="img-fluid" style="width: 1500px; height: 500px;">
+                    <img src="{{asset('resources/img/Picture2.png')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
                       <h3></h3>
                       <p></p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/Picture3.jpg')}}" class="img-fluid" style="width: 1500px; height: 500px;">
+                    <img src="{{asset('resources/img/Picture3.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
                       <h3></h3>
                       <p></p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/tourism/catmoncave/catmoncave3.jpg')}}" class="img-fluid" style="width: 1500px; height: 500px;">
+                    <img src="{{asset('resources/img/tourism/catmoncave/catmoncave3.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
                       <h3 style="color: white;">Catmon Cave</h3>
                       <p>Bry. Catmon, Bontoc, So. Leyte</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/tourism/catmoncave/catmoncave5.jpg')}}" class="img-fluid" style="width: 1500px; height: 500px;">
+                    <img src="{{asset('resources/img/tourism/catmoncave/catmoncave5.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
                       <h3 style="color: white;">Catmon Cave</h3>
                       <p>Bry. Catmon, Bontoc, So. Leyte</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/tourism/yumeyaresort/FB_IMG_1694919746940.jpg')}}" class="img-fluid" style="width: 1500px; height: 500px;">
+                    <img src="{{asset('resources/img/tourism/yumeyaresort/FB_IMG_1694919746940.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
                       <h3 style="color: white;">Yumeya Mountain Resort</h3>
                       <p>Brgy. Sto. Nino, Bontoc, So. Leyte</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/tourism/yumeyaresort/FB_IMG_1694921338546.jpg')}}" class="img-fluid" style="width: 1500px; height: 500px;">
+                    <img src="{{asset('resources/img/tourism/yumeyaresort/FB_IMG_1694921338546.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
                       <h3 style="color: white;">Yumeya Mountain Resort</h3>
                        <p>Brgy. Sto. Nino, Bontoc, So. Leyte</p>
                     </div>
                 </div>
                  <div class="carousel-item">
-                    <img src="{{asset('resources/img/tourism/catmoncave/catmoncave1.jpg')}}" class="img-fluid" style="width: 1500px; height: 500px;">
-                    <div class="carousel-caption">
-                      <h3 style="color: white;">Catmon Cave</h3>
-                      <p>Bry. Catmon, Bontoc, So. Leyte</p>
-                    </div>
-                </div>
-                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/tourism/bontocproper/FB_IMG_1694919829911.jpg')}}" class="img-fluid" style="width: 1500px; height: 500px;">
+                    <img src="{{asset('resources/img/tourism/bontocproper/FB_IMG_1694919829911.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
                       <h3 style="color: white;">Birds-eye view of Bontoc Proper</h3>
                       <p>Bontoc, Southern Leyte, Philippines</p>
-                    </div>
-                </div>
-                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/tourism/bontocproper/bontocport.jpg')}}" class="img-fluid" style="width: 1500px; height: 500px;">
-                    <div class="carousel-caption">
-                      <h3 style="color: white;">Port of Bontoc</h3>
-                      <p>Brgy. Poblacion, Bontoc, So. Leyte</p>
                     </div>
                 </div>
             </div>
@@ -366,7 +349,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
 
 @endsection

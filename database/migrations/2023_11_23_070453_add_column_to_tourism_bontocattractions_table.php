@@ -12,11 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('tourism_bontocattractions', function (Blueprint $table) {
-            $table->id();
             $table->string('image')->nullable();
-            $table->string('title');
-            $table->text('description');
-            $table->timestamps();
         });
     }
 

@@ -36,7 +36,7 @@
         <div class="row" style="background-image: url('{{asset('resources/img/IMG20230719081550.jpg')}}'); background-repeat: no-repeat;background-position: center;background-size: 100% 300%;">
                 <div class="col-sm-10"> <br>
                      <img style="width: 10%; float: left; padding-right: 5px; margin-bottom: 4%;" src="{{asset('resources/img/bontoclogonobg.png')}}">
-                        <h3 style="margin-top: 10px; color: #ffffff; font-family: 'Open Sans';">Municipality of Bontoc</h3>
+                        <h3 style="margin-top: 10px; color: red; font-family: 'Open Sans';">Municipality of Bontoc</h3>
                         <p style="color: #ffffff; font-family: 'Open Sans';">Brgy. Poblacion, Bontoc, Southern Leyte, Philippines, 6604</p>
                 </div>
                 <div class="col-sm-2" >

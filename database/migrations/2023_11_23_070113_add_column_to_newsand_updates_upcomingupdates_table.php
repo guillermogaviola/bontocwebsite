@@ -12,11 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('newsand_updates_upcomingupdates', function (Blueprint $table) {
-            $table->id();
             $table->string('image')->nullable();
-            $table->string('title');
-            $table->text('description');
-            $table->timestamps();
         });
     }
 

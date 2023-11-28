@@ -18,14 +18,14 @@ class ServicesController extends Controller
         ]);
     }
 
-    //  public function indexCitizensCharter()
+     public function indexCitizensCharter()
 
-    // {
-    //     return view('Frontend.Services.CitizensCharter.index');
-    // }
+    {
+        return view('Frontend.Services.CitizensCharter.index');
+    }
     
-    // public function indexBomwasa()
-    // {
-    // 	return view('Frontend.Services.Bomwasa.index');
-    // }
+    public function indexBomwasa()
+    {
+    	return view('Frontend.Services.Bomwasa.index');
+    }
 }

@@ -8,11 +8,11 @@ use App\Models\Careers_jobvacancies;
 
 class CareersController extends Controller
 {
-   public function indexJobVacancies()
+    public function indexJobVacancies()
     {
-        $jobvacancies = Careers_jobvacancies::all();
-        return view('Frontend.Careers.JobVacancies.index',[
-                'jobvacancies' => $jobvacancies
+        $history = Careers_jobvacancies::first();
+        return view('Frontend.About.History.index',[
+                'history' => $history
         ]);
     }
     

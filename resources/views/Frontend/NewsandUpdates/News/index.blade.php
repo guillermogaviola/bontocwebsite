@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
-                <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395316821_303000189163725_2409139856403516309_n.jpg') }}" style="object-fit: cover;">
+                <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395319120_303000175830393_641487911243486377_n.jpg') }}" style="object-fit: cover;">
                     <div class="overlay position-relative bg-light">
                             <div class="mb-2" style="font-size: 14px;">
                                 <a href="">Title</a>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
-                <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395316821_303000189163725_2409139856403516309_n.jpg') }}" style="object-fit: cover;">
+                <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395324091_302999379163806_7386524974371784414_n.jpg') }}" style="object-fit: cover;">
                     <div class="overlay position-relative bg-light">
                             <div class="mb-2" style="font-size: 14px;">
                                 <a href="">Title</a>

@@ -17,17 +17,17 @@ class CareersController extends Controller
 
    public function addJobVacancies(Request $request) 
     {
-        // if ($request->id) {
-        //     $update = Careers_jobvacancies::find($request->id);
-        //     $update->title = $request->title;
-        //     $update->description = $request->description;
-        //     $update->save();
-        // } else {
+        if ($request->id) {
+            $update = Careers_jobvacancies::find($request->id);
+            $update->title = $request->title;
+            $update->description = $request->description;
+            $update->save();
+        } else {
             $formsave = new Careers_jobvacancies();
             $formsave->title = $request->title;
             $formsave->description = $request->description;
             $formsave->save();
-        // }
+         }
         return redirect()->back();
     }
 }

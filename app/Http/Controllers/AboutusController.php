@@ -28,7 +28,11 @@ class AboutusController extends Controller
             $update->title = $request->title;
             $update->description = $request->description;
             $update->save();
-
+        } else {
+            $formsave = new Aboutus_history();
+            $formsave->title = $request->title;
+            $formsave->description = $request->description;
+            $formsave->save();
         }
         return redirect()->back();
     }
@@ -56,7 +60,9 @@ class AboutusController extends Controller
         }
         return redirect()->back();
     }
-     public function indexmissionandvision() 
+
+
+    public function indexmissionandvision() 
     {
        $missionandvision = Aboutus_missionandvision::first();
         return view('admin.aboutus.missionandvision.index',[

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <form method="POST" action="{{route('admin.careers.jobvacancies.add')}}" enctype="multipart/form-data">
+       <form method="POST" action="{{route('admin.careers.jobvacancies.add')}}">
             @csrf
             <div class="row card p-5">
                 <div class="bg-light p-5 rounded">
@@ -10,24 +10,24 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label class="text-black">Title</label>
+                        <label>Title</label>
                         @if(isset($jobvacancies->title))
-                            <input type="text" hidden="" name="id" class="form-control">
-                            <input type="text" name="title" class="form-control" placeholder="Title">
+                            <input type="text" hidden="" name="id" value="{{$jobvacancies->id}}"class="form-control">
+                            <input type="text" name="title" value="{{$jobvacancies->title}}" class="form-control" placeholder="Title">
                         @else
                          <input type="text" name="title" value="" class="form-control" placeholder="Title">
                         @endif
                     </div>
                      <div class="form-group">
-                        <label class="text-black">Description</label>
+                        <label>Description</label>
                          @if(isset($jobvacancies->description))
-                           <textarea id="myTextarea" name="description"  style="width: 100%;"></textarea>
+                           <textarea id="myTextarea" name="description" value="{{$jobvacancies->description}}" style="width: 100%;">{{$jobvacancies->description}}</textarea>
                         @else
                          <textarea id="myTextarea" name="description" style="width: 100%;"></textarea>
                         @endif
+                        
                     </div>
                     <div>
-                    <br>
                         <button type="submit" class="btn btn-primary btn-sm">Save</button>
                     </div>
                 </div>
@@ -39,10 +39,11 @@
     <script>
         tinymce.init({
             selector: '#myTextarea',
-            plugins: 'advlist autolink lists link image code imagetools media table paste',
-            toolbar: 'undo redo | formatselect | bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | link image code media table',
+            plugins: 'advlist autolink lists link image imagetools media table paste',
+            toolbar: 'undo redo | formatselect | bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | link image media table',
             menubar: false,
           });
     </script>
+
 
 @endsection

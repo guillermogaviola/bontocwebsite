@@ -10,7 +10,6 @@ class NewsandUpdates_news extends Model
     use HasFactory;
 
     protected $fillable = [
-    	
         'image',
     ];
 }

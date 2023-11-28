@@ -31,7 +31,7 @@ class NewsandUpdatesController extends Controller
             $formsave->description = $request->description;
 
                 $target_dir = "resources/img/news/";
-                $target_file = $target_dir . basename($_FILES["file"]["name"]);
+                $target_file = $target_dir . basename($_FILES["image"]["name"]);
                 $uploadOk = 1;
                 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 

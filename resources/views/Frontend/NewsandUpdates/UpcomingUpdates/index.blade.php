@@ -18,7 +18,7 @@
         <div class="col-lg-4 mb-3">
             <div class="row">
                 <div class="col-lg-12">
-                    <img src="/{{ $value->image }}" width="350px" height="200px">
+                    <img src="/{{ $news->image }}" width="350px" height="200px">
                 </div>
                 <div class="col-lg-12">
                     <a href="#"><h5></h5></a>

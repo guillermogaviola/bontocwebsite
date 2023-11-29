@@ -2,6 +2,18 @@
 
 @section('content')
 
+<style>
+    .h6{
+         font-family: 'Helvetica';
+    }
+    a{
+        font-family: 'Helvetica';
+    }
+    span{
+        font-family: 'Helvetica';
+    }
+</style>
+
 <div class="container-fluid">
         <div class="col-lg-12">
             <div id="slides" class="carousel slide" data-ride="carousel">
@@ -77,7 +89,7 @@
             </div>
             <br>
             <div class="video-container">
-               <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBbtartsDWandererOfficial%2Fvideos%2F309437914951962%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+               <iframe style="font-family: 'Montserrat';" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBbtartsDWandererOfficial%2Fvideos%2F309437914951962%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
             </div>       
         </div>
 
@@ -367,9 +379,6 @@
                                 </li>
                                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
                                 <li class="page-item">
                                   <a class="page-link" href="#" aria-label="Next">
                                     <span class="fa fa-angle-double-right" aria-hidden="true"></span>

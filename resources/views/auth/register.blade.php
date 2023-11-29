@@ -1,9 +1,8 @@
 
-
 @extends('layouts.auth')
 @section('content')
 
-<title>LGU-Bontoc | Register</title>
+<title>Municipality of Bontoc | Register </title>
 
 @include('layouts.partials.message')
 
@@ -21,16 +20,13 @@
             <div class="name mb-3"> 
                 <label for="floatingEmail">Name</label>
                <input type="text" class="form-control" name="name" value="{{ old('name') }}" required="required" autofocus>
-               
                 @if ($errors->has('name'))
                     <span class="text-danger text-left">{{ $errors->first('name') }}</span>
                 @endif
             </div>
-               
                 @if ($errors->has('name'))
                     <span class="text-danger text-left">{{ $errors->first('name') }}</span>
                 @endif
-
             </div>
             <div class="email mb-3"> 
                 <label for="floatingEmail">Email Address</label>
@@ -76,7 +72,7 @@
                 <button type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto">Sign Up</button>
             </div>
         </form>
-        <div class="auth-option text-center pt-5">Already have an account? <a class="text-link" href="{{route('login.perform')}}" >Log in.</a></div>
+        <div class="auth-option text-center pt-5">Already have an account? <a class="text-link" href="{{route('register.show')}}">Log in.</a></div>
     </div>                 
 </div>
 </form>

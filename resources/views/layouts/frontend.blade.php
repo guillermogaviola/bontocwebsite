@@ -9,12 +9,12 @@
     <link rel="icon" href="{{ asset('resources/img/bontoclogonobg.png')}}" sizes="32x32" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href='https://fonts.googleapis.com'>
+    <link rel="preconnect" href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap' rel="stylesheet">   
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css' rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="{{ asset('resources/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
@@ -25,6 +25,16 @@
     <style>
         h5{
             color: white;
+            font-family: Helvetica;
+        }
+        h3{
+            color: red;
+            font-family: 'Helvetica';
+            margin-top: 10px;
+        }
+        p{
+            color: white;
+            font-family: 'Helvetica';
         }
         
     </style>
@@ -36,8 +46,8 @@
         <div class="row" style="background-image: url('{{asset('resources/img/IMG20230719081550.jpg')}}'); background-repeat: no-repeat;background-position: center;background-size: 100% 300%;">
                 <div class="col-sm-10"> <br>
                      <img style="width: 10%; float: left; padding-right: 5px; margin-bottom: 4%;" src="{{asset('resources/img/bontoclogonobg.png')}}">
-                        <h3 style="margin-top: 10px; color: red; font-family: 'Open Sans';">Municipality of Bontoc</h3>
-                        <p style="color: #ffffff; font-family: 'Open Sans';">Brgy. Poblacion, Bontoc, Southern Leyte, Philippines, 6604</p>
+                        <h3>Municipality of Bontoc</h3>
+                        <p>Brgy. Poblacion, Bontoc, Southern Leyte, Philippines, 6604</p>
                 </div>
                 <div class="col-sm-2" >
                     <p  style="color: white; padding-right: -1px;">Philippine Standard Time <iframe src="https://oras.pagasa.dost.gov.ph/time_display/time/" allowtransparency="true" scrolling="no" frameborder="0" height="30px" width="100%"></iframe></p>
@@ -56,30 +66,30 @@
         <div class="col-sm-12 col-lg-4 text-light">
         <h5>Public Sector Links</h5>
             <ul>
-                <li><a class="text-light" target="_blank" href="https://www.gov.ph/">GOV.PH</a></li>
-                <li><a class="text-light" target="_blank" href="https://cscro8.weebly.com/">Civil Service Commision Region 8</a></li>
-                <li><a class="text-light" target="_blank" href="https://www.officialgazette.gov.ph/">Republic of the Philippines Official Gazette</a></li>
-                <li><a class="text-light" target="_blank" href="https://op-proper.gov.ph/">Office of the President</a></li>
-                <li><a class="text-light" target="_blank" href="http://legacy.senate.gov.ph/">Senate of the Philippines</a></li>
-                <li><a class="text-light" target="_blank" href="https://www.congress.gov.ph/">House of the Representatives</a></li>
-                <li><a class="text-light" target="_blank" href="https://sc.judiciary.gov.ph/">Supreme Court</a></li>
-                <li><a class="text-light"target="_blank" href="https://dilg.gov.ph/">Department of Interior &amp; Local Government</a></li>
-                <li><a class="text-light" target="_blank" href="https://dfa.gov.ph/">Department of Foreign Affairs</a></li>
-                <li><a class="text-light" target="_blank" href="http://www.tourism.gov.ph/general_information.aspx">Department of Tourism</a></li>
-                <li><a class="text-light" target="_blank" href="https://pia.gov.ph/">Philippine Information Agency</a></li>
-                <li><a class="text-light" target="_blank" href="https://dict.gov.ph/">Department of Information &amp; Communication Technology</a></li>
-                <li><a class="text-light" target="_blank" href="https://data.gov.ph/">Open Data</a></li>
-                <li><a class="text-light" target="_blank" href="https://www.foi.gov.ph/">Freedom of Information</a></li>
-                <li><a class="text-light" target="_blank" href="https://fdpp.dilg.gov.ph/">Full Disclosure Portal</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://www.gov.ph/">GOV.PH</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://cscro8.weebly.com/">Civil Service Commision Region 8</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://www.officialgazette.gov.ph/">Republic of the Philippines Official Gazette</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://op-proper.gov.ph/">Office of the President</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="http://legacy.senate.gov.ph/">Senate of the Philippines</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://www.congress.gov.ph/">House of the Representatives</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://sc.judiciary.gov.ph/">Supreme Court</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light"target="_blank" href="https://dilg.gov.ph/">Department of Interior &amp; Local Government</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://dfa.gov.ph/">Department of Foreign Affairs</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="http://www.tourism.gov.ph/general_information.aspx">Department of Tourism</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://pia.gov.ph/">Philippine Information Agency</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://dict.gov.ph/">Department of Information &amp; Communication Technology</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://data.gov.ph/">Open Data</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://www.foi.gov.ph/">Freedom of Information</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://fdpp.dilg.gov.ph/">Full Disclosure Portal</a></li>
             </ul>
         </div>
     <div class="col-sm-12 col-lg-4 text-light">
         <h5>Important Matters</h5>
                 <ul>
-                <li><a class="text-light" href="">Terms and Conditions</a></li>
-                <li><a class="text-light" href="">Privacy Policy</a></li>
-                <li><a class="text-light" href="">Cultural Mapping</a></li>
-                <li><a class="text-light" href="">Legislations</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" href="">Terms and Conditions</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" href="">Privacy Policy</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" href="">Cultural Mapping</a></li>
+                <li><a style="font-family: Helvetica;" class="text-light" href="">Legislations</a></li>
             </ul>
         <br>
             <div>
@@ -95,7 +105,7 @@
         <form action="javascript:void(0);">
             <div class="form-group">
                 <label for="email" class="text-light">Email address</label>
-                <input type="email" class="form-control" placeholder="BontocLGU@gmail.com">
+                <input type="email" class="form-control" placeholder="bontoclgu@gmail.com">
             </div>
         <div class="form-group">
                 <label for="email" class="text-light">Type your feedback here.</label>
@@ -103,36 +113,32 @@
                 </textarea>
         </div>
             <button id="submit-button" type="submit" class="btn bg-light">Submit</button>
-        </form>
-        <hr>
-            <h6 style="color: white;">Contact Number:
-            <br>
-            +63-9566483040
-            </h6>
-        <h5 style="color: white;">Socials</h5>
+        </form><hr>
+        <p>Contact Number:<br>+63-9566483040</p>
+        <p>Socials</p>
             <p>
-                <a href="https://www.facebook.com/BontocPIO">
+                <a target="_blank" href="https://www.facebook.com/BontocPIO">
                 <img decoding="async" loading="lazy" class="alignnone wp-image-9481" src="{{ asset('resources/img/socialmedias/facebook.png') }}" style="width: 40px;">
                 </a>
             </p>
     </div>
     <div class="container-fluid py-4 px-sm-3 px-md-5">
-        <p class="m-0 text-center">
-        &copy; <a class="font-weight-bold" href="#">2023</a>.
-         All Rights Reserved.
-        Designed by <a class="font-weight-bold" href="">GaviolaGuillermo.</a>
+        <p class="m-0 text-center">&copy; 
+        <a href="#" style="color: blue;">2023</a>. All Rights Reserved. Designed by
+        <a href="#" style="color: blue;">GaviolaGuillermo.</a>
         </p>
     </div>
     </div>
 </div>
+<!--End Footer Start -->
 
    <!-- Back to Top -->
-    <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+    <a href="#" class="btn btn-danger back-to-top"><i class="fa fa-angle-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
     <script src="{{ asset('resources/lib/easing/easing.min.js') }}"></script>
     <script src="{{ asset('resources/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 

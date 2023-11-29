@@ -2,20 +2,22 @@
 
 @section('content')
 
+<style>
+    h1{
+        text-align: center;
+        color: #046631;
+        font-family: Helvetica; 
+    }
+</style>
+
 
 <div class="container">
-
-<br>
-<br>
-
-@if(isset($mayorsoffice))
-    <h1 style="text-align: center;">
-        <span style="color: #046631;">{{$mayorsoffice->title}}</span>
-    </h1><br><br>
-    <div class="siteorigin-widget-tinymce textwidget">
-        {!! $mayorsoffice->description !!}
-    </div>
-@endif
-  
+  @if(isset($mayorsoffice->title))
+        <h1><span>{{$mayorsoffice->title}}</span></h1>
+        <div class="siteorigin-widget-tinymce textwidget">
+            {!! $mayorsoffice->description !!}
+        </div>
+    @endif
 </div>
+
 @endsection

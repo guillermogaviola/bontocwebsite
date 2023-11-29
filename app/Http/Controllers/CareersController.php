@@ -7,7 +7,7 @@ use App\Models\Careers_jobvacancies;
 
 class CareersController extends Controller
 {
-   public function indexJobVacancies() 
+   public function indexjobvacancies() 
     {
         $jobvacancies = Careers_jobvacancies::all();
         return view('admin.careers.jobvacancies.index',[
@@ -15,7 +15,7 @@ class CareersController extends Controller
         ]);
     }
 
-   public function addJobVacancies(Request $request) 
+   public function addjobvacancies(Request $request) 
     {
         if ($request->id) {
             $update = Careers_jobvacancies::find($request->id);

@@ -16,7 +16,7 @@ class ServicesController extends Controller
         ]);
     }
 
-   public function addMayorsOffice(Request $request) 
+   public function addmayorsoffice(Request $request) 
     {
         if ($request->id) {
             $update = Services_mayorsoffice::find($request->id);

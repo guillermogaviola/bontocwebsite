@@ -16,7 +16,7 @@ class TransparencyController extends Controller
         ]);
     }
 
-   public function addMunicipalOrdinances(Request $request) 
+   public function addmunicipalordinances(Request $request) 
     {
         if ($request->id) {
             $update = Transparency_municipalordinance::find($request->id);
@@ -40,7 +40,7 @@ class TransparencyController extends Controller
         ]);
     }
 
-   public function addResolutions(Request $request) 
+   public function addresolutions(Request $request) 
     {
         if ($request->id) {
             $update = Transparency_resolution::find($request->id);

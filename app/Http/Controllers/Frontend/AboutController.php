@@ -14,59 +14,59 @@ use App\Models\Aboutus_directory;
 
 class AboutController extends Controller
 {
-    public function indexHistory()
+    public function indexhistory()
     {
         $history = Aboutus_history::first();
-        return view('Frontend.About.History.index',[
+        return view('frontend.about.history.index',[
                 'history' => $history
         ]);
     }
 
-    public function indexLocation()
+    public function indexlocation()
     {
         $location = Aboutus_location::first();
-        return view('Frontend.About.Location.index',[
+        return view('frontend.about.location.index',[
                 'location' => $location
         ]);
     }
 
 
-    public function indexMissionandVision()
+    public function indexmissionandvision()
     {
         $missionandvision = Aboutus_missionandvision::first();
-        return view('Frontend.About.MissionandVision.index',[
+        return view('frontend.about.missionandvision.index',[
                 'missionandvision' => $missionandvision
         ]);
     }
 
-     public function indexMunicipalitySeal()
+     public function indexmunicipalityseal()
     {
        $municipalityseal = Aboutus_municipalityseal::first();
-        return view('Frontend.About.MunicipalitySeal.index',[
+        return view('frontend.about.municipalityseal.index',[
                 'municipalityseal' => $municipalityseal
         ]);
     }
 
-    public function indexMandate() 
+    public function indexmandate() 
     {
         $mandate = Aboutus_mandate::first();
-        return view('Frontend.About.Mandate.index',[
+        return view('frontend.about.mandate.index',[
                 'mandate' => $mandate
         ]);
     }
 
-    public function indexServicePledge() 
+    public function indexservicepledge() 
     {
         $servicepledge = Aboutus_servicepledge::first();
-        return view('Frontend.About.Servicepledge.index',[
+        return view('frontend.about.servicepledge.index',[
                 'servicepledge' => $servicepledge
         ]);
     }
 
-     public function indexDirectory() 
+     public function indexdirectory() 
     {
        $directory = Aboutus_directory::first();
-        return view('Frontend.About.Directory.index',[
+        return view('frontend.about.directory.index',[
                 'directory' => $directory
         ]);
     }

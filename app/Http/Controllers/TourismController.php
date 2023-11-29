@@ -7,7 +7,7 @@ use App\Models\Tourism_bontocattractions;
 
 class TourismController extends Controller
 {
-    public function indexBontocAttractions() 
+    public function indexbontocattractions() 
     {
         $bontocattractions = Tourism_bontocattractions::all();
         return view('admin.tourism.bontocattractions.index',[
@@ -15,14 +15,9 @@ class TourismController extends Controller
         ]);
     }
 
-    public function addBontocAttractions(Request $request) 
+    public function addbontocattractions(Request $request) 
     {
-        // if ($request->id) {
-        //     $update = Careers_jobvacancies::find($request->id);
-        //     $update->title = $request->title;
-        //     $update->description = $request->description;
-        //     $update->save();
-        // } else {
+        
             $formsave = new Tourism_bontocattractions();
             $formsave->title = $request->title;
             $formsave->description = $request->description;

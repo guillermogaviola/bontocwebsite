@@ -7,7 +7,7 @@
             		</div>
 			            <div class="app-utilities col-auto">
 				            <div class="app-utility-item app-user-dropdown dropdown">
-					            <a class="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="{{asset('resources/img/bontoclogonobg.png')}}" alt="user profile">LGU-Bontoc</a>
+					            <a class="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="{{asset('resources/img/bontoclogonobg.png')}}" alt="user profile">admin</a>
 						        <ul class="dropdown-menu" aria-labelledby="user-dropdown-toggle">
 							<li><a class="dropdown-item" href="{{route('register.perform')}}">Log Out</a></li>
 						</ul>

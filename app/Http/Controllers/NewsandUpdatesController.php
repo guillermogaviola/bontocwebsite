@@ -9,15 +9,15 @@ use App\Models\NewsandUpdates_upcomingupdates;
 
 class NewsandUpdatesController extends Controller
 {
-    public function indexNews() 
+    public function indexnews() 
     {
-        $news = NewsandUpdates_news::all();
+        $news = newsandupdates_news::all();
         return view('admin.newsandupdates.news.index',[
                 'news' => $news
         ]);
     }
 
-    public function addNews(Request $request) 
+    public function addnews(Request $request) 
     {
         // if ($request->id) {
         //     $update = Careers_jobvacancies::find($request->id);
@@ -83,7 +83,7 @@ class NewsandUpdatesController extends Controller
         return redirect()->back();
     }
 
-    public function indexUpcomingUpdates() 
+    public function indexupcomingupdates() 
     {
         $upcomingupdates = NewsandUpdates_upcomingupdates::all();
         return view('admin.newsandupdates.upcomingupdates.index',[
@@ -91,7 +91,7 @@ class NewsandUpdatesController extends Controller
         ]);
     }
 
-    public function addUpcomingUpdates(Request $request) 
+    public function addupcomingupdates(Request $request) 
     {
         // if ($request->id) {
         //     $update = Careers_jobvacancies::find($request->id);

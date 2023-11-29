@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"> 
+
 <head>
-    
-    <!-- Meta -->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +13,20 @@
     
     <!-- App CSS -->  
     <link id="theme-style" rel="stylesheet" href="{{ asset('assets/css/portal.css') }}">
-</head> 
+
+</head>
+
 <body class="app app-login p-0">    	
     <div class="row g-0 app-auth-wrapper">
 	    <div class="col-12 col-md-7 col-lg-6 auth-main-col text-center p-5">
 		    <div class="d-flex flex-column align-content-end">
-
 			     @yield('content')
-		    
 			</div>
 	    </div>
-                <div class="col-12 col-md-5 col-lg-6 h-100 auth-background-col">
-            <div class="auth-background-holder">                
-            </div>
-            <div class="auth-background-mask"></div>
+            <div class="col-12 col-md-5 col-lg-6 h-100 auth-background-col">
+                <div class="auth-background-holder">                
+                    </div>
+                <div class="auth-background-mask"></div>
             <div class="auth-background-overlay p-3 p-lg-5">
                 <div class="d-flex flex-column align-content-end h-100">
                     <div class="h-100"></div>
@@ -35,8 +35,8 @@
                         <div>You can visit our Official Facebook page <a href="https://www.facebook.com/BontocPIO">here</a>.</div>
                     </div>
                 </div>
-            </div><!--//auth-background-overlay-->
-        </div><!--//auth-background-col-->
+            </div>
+        </div>
     </div>
 </body>
 </html> 

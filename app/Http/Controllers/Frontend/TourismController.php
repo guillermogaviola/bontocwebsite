@@ -9,10 +9,10 @@ use App\Models\Tourism_bontocattractions;
 
 class TourismController extends Controller
 {
-    public function indexBontocAttractions()
+    public function indexbontocattractions()
     {
         $bontocattractions = Tourism_bontocattractions::all();
-            return view('Frontend.Tourism.BontocAttractions.index',[
+            return view('frontend.tourism.bontocattractions.index',[
                     'bontocattractions' => $bontocattractions
             ]);
     }

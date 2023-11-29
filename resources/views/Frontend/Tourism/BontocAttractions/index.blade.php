@@ -2,8 +2,8 @@
 
 @section('content')
 
-
 <style>
+
 h3{
   color: white;
 }
@@ -11,13 +11,15 @@ h3{
 h4{
   color: #046631;
   text-align: center;
+  font-family: Helvetica;
 }
+
 </style>
 
-<div class="container-fluid">
-<br>
-<h4>POPULAR DESTINATIONS</h4>
-<br>
+<div class="container-fluid"><br>
+
+<h4>POPULAR DESTINATIONS</h4><br>
+
     <div class="row" style="padding:0px;">
         <div class="col-lg-12">
                 <div id="slides" class="carousel slide" data-ride="carousel">
@@ -104,7 +106,6 @@ h4{
                               <p>We'd love to see you again!</p>
                             </div> 
                         </div>
-
                     </div>
                     <a class="carousel-control-prev" href="#slides" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
@@ -112,9 +113,7 @@ h4{
                     <a class="carousel-control-next" href="#slides" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
-                </div><br>
-                
-                
+                </div><br> 
         </div>
     </div>
 </div>

@@ -31,6 +31,6 @@ class RegisterController extends Controller
 
         auth()->login($user);
 
-        return redirect('/admin/dashboard')->with('success', "Account successfully registered.");
+        return redirect('/admin/register')->with('success', "Account successfully registered.");
     }
 }

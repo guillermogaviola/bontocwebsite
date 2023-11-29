@@ -14,7 +14,7 @@ class TransparencyController extends Controller
 public function indexmunicipalordinances()
     {
         $municipalordinances = Transparency_municipalordinance::first();
-            return view('Frontend.Transparency.MunicipalOrdinances.index',[
+            return view('frontend.transparency.municipalordinances.index',[
                     'municipalordinances' => $municipalordinances
             ]);
      }
@@ -23,7 +23,7 @@ public function indexmunicipalordinances()
 public function indexresolutions()
     {
         $resolutions = Transparency_resolution::first();
-            return view('Frontend.Transparency.Resolutions.index',[
+            return view('frontend.transparency.resolutions.index',[
                     'resolutions' => $resolutions
             ]);
      }

@@ -2,13 +2,25 @@
 
 @section('content')
 
+@extends('layouts.frontend')
+
+@section('content')
+
+<style>
+    h1{
+        text-align: center;
+        color: #046631;
+        font-family: Helvetica; 
+    }
+</style>
+
 <div class="container">
     <!-- Topbar Start -->
     <div class="container-fluid">
         <div class="row align-items-center py-2 px-lg-5">
             <div class="col-lg-4">
                 <a href="" class="navbar-brand d-none d-lg-block"><br>
-                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Ne</span>ws</h1>
+                    <h1 class="m-0 display-5 text-uppercase"><span class="text-danger">Ne</span>ws</h1>
                 </a>
             </div>
         </div>
@@ -52,4 +64,5 @@
         </div>
     </div>
 </div>
+
 @endsection

@@ -12,7 +12,7 @@ class HomepageController extends Controller
     public function index()
     {
     	$news = NewsandUpdates_news::all();
-        return view('Frontend.Homepage.index', [
+        return view('frontend.homepage.index', [
                 'news' => $news
         ]);
     }

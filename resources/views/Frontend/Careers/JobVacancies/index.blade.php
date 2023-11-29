@@ -2,18 +2,22 @@
 
 @section('content')
 
+<style>
+    h1{
+        text-align: center;
+        color: #046631;
+        font-family: Helvetica; 
+    }
+</style>
 
 
-<div class="container"><br><br>
-	
-@if(isset($jobvacancies->title))
-        <h1 style="text-align: center;">
-            <span style="color: #046631;">{{$jobvacancies->title}}</span>
-        </h1><br><br>
+<div class="container">
+  @if(isset($jobvacancies->title))
+        <h1><span>{{$jobvacancies->title}}</span></h1>
         <div class="siteorigin-widget-tinymce textwidget">
             {!! $jobvacancies->description !!}
         </div>
     @endif
-  
 </div>
+
 @endsection

@@ -6,45 +6,42 @@ use App\Http\Controllers\Frontend\AboutController;
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 { 
-    
      //Homepage Routes
       Route::get('/', 'Frontend\HomepageController@index')->name('homepage');
 
      // AboutUs Routes
-      Route::get('/about/history', 'Frontend\AboutController@indexHistory')->name('about.history');
-      Route::get('/about/location', 'Frontend\AboutController@indexLocation')->name('about.location');
-      Route::get('/about/missionandvision', 'Frontend\AboutController@indexMissionandVision')->name('about.missionandvision');
-      Route::get('/about/municipalityseal', 'Frontend\AboutController@indexMunicipalitySeal')->name('about.municipalityseal');
-      Route::get('/about/mandate', 'Frontend\AboutController@indexMandate')->name('about.mandate');
-      Route::get('/about/servicepledge', 'Frontend\AboutController@indexServicePledge')->name('about.servicepledge');
-      Route::get('/about/directory', 'Frontend\AboutController@indexDirectory')->name('about.directory');
+      Route::get('/about/history', 'Frontend\AboutController@indexhistory')->name('about.history');
+      Route::get('/about/location', 'Frontend\AboutController@indexlocation')->name('about.location');
+      Route::get('/about/missionandvision', 'Frontend\AboutController@indexmissionandvision')->name('about.missionandvision');
+      Route::get('/about/municipalityseal', 'Frontend\AboutController@indexmunicipalityseal')->name('about.municipalityseal');
+      Route::get('/about/mandate', 'Frontend\AboutController@indexmandate')->name('about.mandate');
+      Route::get('/about/servicepledge', 'Frontend\AboutController@indexservicepledge')->name('about.servicepledge');
+      Route::get('/about/directory', 'Frontend\AboutController@indexdirectory')->name('about.directory');
 
 
      //News and Updates
-     Route::get('/newsandupdates/news', 'Frontend\NewsandUpdatesController@indexNews')->name('newsandupdates.news');
-     Route::get('/newsandupdates/upcomingupdates', 'Frontend\NewsandUpdatesController@indexUpcomingUpdates')->name('newsandupdates.upcomingupdates');
+     Route::get('/newsandupdates/news', 'Frontend\NewsandUpdatesController@indexnews')->name('newsandupdates.news');
+     Route::get('/newsandupdates/upcomingupdates', 'Frontend\NewsandUpdatesController@indexupcomingupdates')->name('newsandupdates.upcomingupdates');
 
      //Services
-     Route::get('/services/mayorsoffice', 'Frontend\ServicesController@indexMayorsOffice')->name('services.mayorsoffice');
-     Route::get('/services/citizenscharter', 'Frontend\ServicesController@indexCitizensCharter')->name('services.citizenscharter');
-     Route::get('/services/bomwasa','Frontend\ServicesController@indexBomwasa')->name('services.bomwasa');
+     Route::get('/services/mayorsoffice', 'Frontend\ServicesController@indexmayorsoffice')->name('services.mayorsoffice');
+     Route::get('/services/citizenscharter', 'Frontend\ServicesController@indexcitizenscharter')->name('services.citizenscharter');
+     Route::get('/services/bomwasa','Frontend\ServicesController@indexbomwasa')->name('services.bomwasa');
 
      //Transparency
-     Route::get('/transparency/municipalordinances', 'Frontend\TransparencyController@indexMunicipalOrdinances')->name('transparency.municipalordinances');
-     Route::get('/transparency/resolutions', 'Frontend\TransparencyController@indexResolutions')->name('transparency.resolutions');
+     Route::get('/transparency/municipalordinances', 'Frontend\TransparencyController@indexmunicipalordinances')->name('transparency.municipalordinances');
+     Route::get('/transparency/resolutions', 'Frontend\TransparencyController@indexresolutions')->name('transparency.resolutions');
 
      //Tourism
-     Route::get('/tourism/bontocattractions', 'Frontend\TourismController@indexBontocAttractions')->name('tourism.bontocattractions');
-
+     Route::get('/tourism/bontocattractions', 'Frontend\TourismController@indexbontocattractions')->name('tourism.bontocattractions');
 
      //Careers
-     Route::get('/careers/jobvacancies', 'Frontend\CareersController@indexJobVacancies')->name('careers.jobvacancies');
+     Route::get('/careers/jobvacancies', 'Frontend\CareersController@indexjobvacancies')->name('careers.jobvacancies');
 
      //Others
-     Route::get('/others/downloadableforms', 'Frontend\OthersController@indexDownloadableForms')->name('others.downloadableforms');
-     Route::get('/others/gallery', 'Frontend\OthersController@indexGallery')->name('others.gallery');
-     Route::get('/others/memorandom', 'Frontend\OthersController@indexMemorandom')->name('others.memorandom');
-
+     Route::get('/others/downloadableforms', 'Frontend\OthersController@indexdownloadableforms')->name('others.downloadableforms');
+     Route::get('/others/gallery', 'Frontend\OthersController@indexgallery')->name('others.gallery');
+     Route::get('/others/memorandom', 'Frontend\OthersController@indexmemorandom')->name('others.memorandom');
 
      Route::group(['middleware' => ['guest']], function() {
 
@@ -107,13 +104,11 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::get('/newsandupdates/upcomingupdates', 'NewsandUpdatesController@indexupcomingupdates')->name('admin.newsandupdates.upcomingupdates');
         Route::post('/newsandupdates/upcomingupdates/add', 'NewsandUpdatesController@addupcomingupdates')->name('admin.newsandupdates.upcomingupdates.add');
 
-
         //Admin Dashboard Transparency
         Route::get('/transparency/municipalordinances', 'TransparencyController@indexmunicipalordinances')->name('admin.transparency.municipalordinances');
         Route::post('/transparency/municipalordinances/add', 'TransparencyController@addmunicipalordinances')->name('admin.transparency.municipalordinances.add');
         Route::get('/transparency/resolutions', 'TransparencyController@indexresolutions')->name('admin.transparency.resolutions');
         Route::post('/transparency/resolutions/add', 'TransparencyController@addresolutions')->name('admin.transparency.resolutions.add');
-
 
         //Admin Dashboard Others
         Route::get('/others/downloadableforms', 'OthersController@indexdownloadableforms')->name('admin.others.downloadableforms');

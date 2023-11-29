@@ -10,19 +10,19 @@ use App\Models\NewsandUpdates_upcomingupdates;
 
 class NewsandUpdatesController extends Controller
 {
-    public function indexNews()
+    public function indexnews()
     {
         $news = NewsandUpdates_news::all();
-            return view('Frontend.NewsandUpdates.News.index',[
+            return view('frontend.newsandupdates.news.index',[
                     'news' => $news
             ]);
     }
 
 
-    public function indexUpcomingUpdates()
+    public function indexupcomingupdates()
     {
         $upcomingupdates = NewsandUpdates_upcomingupdates::all();
-            return view('Frontend.NewsandUpdates.UpcomingUpdates.index',[
+            return view('frontend.newsandupdates.upcomingupdates.index',[
                     'upcomingupdates' => $upcomingupdates
             ]);
     }

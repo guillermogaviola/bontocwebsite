@@ -2,106 +2,19 @@
 
 @section('content')
     <div class="container">
-        <form method="POST" action="{{route('admin.newsandupdates.upcomingupdates.add')}}" enctype="multipart/form-data">
-            @csrf
-            <div class="card-body">
-              <h5 class="card-title">
-                Upcoming Updates
-                <a href="" class="btn btn-success" style="float: right; margin-top: 5px;">Add Upcoming Updates</a>
-              </h5><br><br>
-              <table class="table table-light">
-                <thead>
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Image</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Created Date</th>
-                    <th scope="col">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>
-                    <img src="" style="height: 100px; width: 100px;">
-                    </td>
-                    <td>fanny</td>
-                    <td>Which currency do you want?</td>
-                    <td>31-10-2023 06:08 AM</td>
-                    <td>
-                      <a href="" class="btn btn-success btn-sm">Edit</a>
-                      <a onclick="return confirm('Are you sure you want to delete records?');" href="" class="btn btn-danger btn-sm">Delete</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>
-                    <img src="" style="height: 100px; width: 100px;">  
-                    </td>
-                    <td>fanny</td>
-                    <td>Yiu want?</td>
-                    <td>31-10-2023 06:08 AM</td>
-                    <td>
-                      <a href="" class="btn btn-success btn-sm">Edit</a>
-                      <a onclick="return confirm('Are you sure you want to delete records?');" href="" class="btn btn-danger btn-sm">Delete</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>
-                    <img src="" style="height: 100px; width: 100px;">
-                    </td>
-                    <td>fanny</td>
-                    <td>what you do?</td>
-                    <td>31-10-2023 06:05 AM</td>
-                    <td>
-                      <a href="" class="btn btn-success btn-sm">Edit</a>
-                      <a onclick="return confirm('Are you sure you want to delete records?');" href="" class="btn btn-danger btn-sm">Delete</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>
-                    <img src="" style="height: 100px; width: 100px;">
-                    </td>
-                    <td>fanny</td>
-                    <td>Which currency do you want?</td>
-                    <td>31-10-2023 06:05 AM</td>
-                    <td>
-                      <a href="" class="btn btn-success btn-sm">Edit</a>
-                      <a onclick="return confirm('Are you sure you want to delete records?');" href="" class="btn btn-danger btn-sm">Delete</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>
-                    <img src="" style="height: 100px; width: 100px;">
-                    </td>
-                    <td>fanny</td>
-                    <td>tgbrtg?</td>
-                    <td>31-10-2023 06:04 AM</td>
-                    <td>
-                      <a href="" class="btn btn-success btn-sm">Edit</a>
-                      <a onclick="return confirm('Are you sure you want to delete records?');" href="" class="btn btn-danger btn-sm">Delete</a>
-                    </td>
-                  </tr>
-                  </tbody>
-              </table><br><br>
-
-<section class="section">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Add New Upcoming Updates</h5><br>
-          <form class="row g-3" action="" method="post" enctype="multipart/form-data">
-            <input type="hidden" name="" value="" autocomplete="off">
-            <div class="form-group">
-                <label class="text-black">Title</label>
-                  @if(isset($jobvacancies->title))
+      <section class="section">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                 <div class="card-body">
+                    <h5 class="card-title">Add Upcoming Updates</h5><br>
+                      <form class="row g-3" action="" method="post" enctype="multipart/form-data">
+                          <input type="hidden" name="" value="" autocomplete="off">
+                            <div class="form-group">
+                              <label class="text-black">Title</label>
+                            @if(isset($jobvacancies->title))
                         <input type="text" hidden="" name="id" class="form-control">
-                        <input type="text" name="title" class="form-control" placeholder="Title">
+                      <input type="text" name="title" class="form-control" placeholder="Title">
                   @else
                      <input type="text" name="title" value="" class="form-control" placeholder="">
                   @endif
@@ -118,6 +31,13 @@
                  <textarea id="myTextarea" name="description" style="width: 100%;"></textarea>
                 @endif
             </div><br>
+            <div class="col-12">
+                  <label for="inputPassword4" class="form-label">Is Featured? *</label>
+                  <select class="form-control" name="status">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                  </select>
+                </div>
                 <div class="col-md-2" style="margin-bottom: 10px;">
                   <label class="form-label text-black">Date Posted</label>
                   <input type="date" name="dateposted" value="" class="form-control">
@@ -130,8 +50,104 @@
       </div>
     </div>
   </div>
-</section>
-</div>
+</section><br><br>
+
+
+ <form method="POST" action="{{route('admin.newsandupdates.upcomingupdates.add')}}" enctype="multipart/form-data">
+            @csrf
+            <div class="card-body">
+              <h5 class="card-title">
+                Upcoming Updates
+                <a href="" class="btn btn-success" style="float: right; margin-top: 5px;">Add Upcoming Updates</a>
+              </h5><br><br>
+              <table class="table table-light">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Is Featured</th>
+                    <th scope="col">Date Posted</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>
+                    <img src="" style="height: 100px; width: 100px;">
+                    </td>
+                    <td>fanny</td>
+                    <td>Which currency do you want?</td>
+                    <td>Yes</td>
+                    <td>31-10-2023 06:08 AM</td>
+                    <td>
+                      <a href="" class="btn btn-success btn-sm">Edit</a>
+                      <a onclick="return confirm('Are you sure you want to delete records?');" href="" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>
+                    <img src="" style="height: 100px; width: 100px;">  
+                    </td>
+                    <td>fanny</td>
+                    <td>Yiu want?</td>
+                    <td>No</td>
+                    <td>31-10-2023 06:08 AM</td>
+                    <td>
+                      <a href="" class="btn btn-success btn-sm">Edit</a>
+                      <a onclick="return confirm('Are you sure you want to delete records?');" href="" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>
+                    <img src="" style="height: 100px; width: 100px;">
+                    </td>
+                    <td>fanny</td>
+                    <td>what you do?</td>
+                    <td>Yes</td>
+                    <td>31-10-2023 06:05 AM</td>
+                    <td>
+                      <a href="" class="btn btn-success btn-sm">Edit</a>
+                      <a onclick="return confirm('Are you sure you want to delete records?');" href="" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>
+                    <img src="" style="height: 100px; width: 100px;">
+                    </td>
+                    <td>fanny</td>
+                    <td>Which currency do you want?</td>
+                    <td>Yes</td>
+                    <td>31-10-2023 06:05 AM</td>
+                    <td>
+                      <a href="" class="btn btn-success btn-sm">Edit</a>
+                      <a onclick="return confirm('Are you sure you want to delete records?');" href="" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                    <img src="" style="height: 100px; width: 100px;">
+                    </td>
+                    <td>fanny</td>
+                    <td>tgbrtg?</td>
+                    <td>Yes</td>
+                    <td>31-10-2023 06:04 AM</td>
+                    <td>
+                      <a href="" class="btn btn-success btn-sm">Edit</a>
+                      <a onclick="return confirm('Are you sure you want to delete records?');" href="" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                  </tr>
+                  </tbody>
+              </table><br><br>
+              </form>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.6.0/tinymce.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.6.0/skins/content/dark/content.min.css" rel="stylesheet">
     <script>

@@ -12,8 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('newsand_updates_news', function (Blueprint $table) {
-            $table->string('image')->nullable();
-            // $table->integer('status')->comment('0: Yes, 1: No');
+            $table->integer('status')->comment('0: Yes, 1: No');
         });
     }
 

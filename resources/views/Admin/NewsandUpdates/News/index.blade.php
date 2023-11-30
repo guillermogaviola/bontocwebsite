@@ -2,21 +2,77 @@
 
 @section('content')
     <div class="container">
-        <form method="POST" action="{{route('admin.newsandupdates.news.add')}}" enctype="multipart/form-data">
-          @csrf
+      <section class="section">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                 <div class="card-body">
+                    <h5 class="card-title">Add New News</h5><br>
+                      <form class="row g-3" action="" method="post" enctype="multipart/form-data">
+                          <input type="hidden" name="" value="" autocomplete="off">
+                            <div class="form-group">
+                              <label class="text-black">Title</label>
+                            @if(isset($jobvacancies->title))
+                        <input type="text" hidden="" name="id" class="form-control">
+                      <input type="text" name="title" class="form-control" placeholder="Title">
+                  @else
+                     <input type="text" name="title" value="" class="form-control" placeholder="">
+                  @endif
+              </div><br>
+              <div class="col-12">
+              <label class="form-label text-black">Image</label>
+                <input type="file" class="form-control" name="image_file">
+            </div><br>
+            <div class="form-group">
+                <label class="text-black">Description</label>
+                 @if(isset($jobvacancies->description))
+                   <textarea id="myTextarea" name="description"  style="width: 100%;"></textarea>
+                @else
+                 <textarea id="myTextarea" name="description" style="width: 100%;"></textarea>
+                @endif
+            </div><br>
+            <div class="col-12">
+                  <label for="inputPassword4" class="form-label">Is Featured? *</label>
+                  <select class="form-control" name="status">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                  </select>
+                  <!-- <select class="form-control" name="status">
+                    <option {{ ($getRecord->status == 1 ) ? 'selected' : '' }} value="1">Active</option>
+                    <option {{ ($getRecord->status == 0 ) ? 'selected' : '' }} value="0">Inactive</option>
+                  </select> -->
+                </div>
+                <div class="col-md-2" style="margin-bottom: 10px;">
+                  <label class="form-label text-black">Date Posted</label>
+                  <input type="date" name="dateposted" value="" class="form-control">
+                </div>
+                <div class="col-12" style="margin-top: 30px;">
+                   <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><br><br>
+
+
+
+ <form method="POST" action="{{route('admin.newsandupdates.upcomingupdates.add')}}" enctype="multipart/form-data">
+            @csrf
             <div class="card-body">
               <h5 class="card-title">
                 News
                 <a href="" class="btn btn-success" style="float: right; margin-top: 5px;">Add News</a>
               </h5><br><br>
-
-              <table class="table-light">
+              <table class="table table-light">
                 <thead>
                   <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Image</th>
                     <th scope="col">Title</th>
                     <th scope="col">Description</th>
+                    <th scope="col">Is Featured</th>
                     <th scope="col">Date Posted</th>
                     <th scope="col">Action</th>
                   </tr>
@@ -29,6 +85,7 @@
                     </td>
                     <td>fanny</td>
                     <td>Which currency do you want?</td>
+                    <td>Yes</td>
                     <td>31-10-2023 06:08 AM</td>
                     <td>
                       <a href="" class="btn btn-success btn-sm">Edit</a>
@@ -42,6 +99,7 @@
                     </td>
                     <td>fanny</td>
                     <td>Yiu want?</td>
+                    <td>No</td>
                     <td>31-10-2023 06:08 AM</td>
                     <td>
                       <a href="" class="btn btn-success btn-sm">Edit</a>
@@ -55,6 +113,7 @@
                     </td>
                     <td>fanny</td>
                     <td>what you do?</td>
+                    <td>Yes</td>
                     <td>31-10-2023 06:05 AM</td>
                     <td>
                       <a href="" class="btn btn-success btn-sm">Edit</a>
@@ -68,6 +127,7 @@
                     </td>
                     <td>fanny</td>
                     <td>Which currency do you want?</td>
+                    <td>Yes</td>
                     <td>31-10-2023 06:05 AM</td>
                     <td>
                       <a href="" class="btn btn-success btn-sm">Edit</a>
@@ -81,6 +141,7 @@
                     </td>
                     <td>fanny</td>
                     <td>tgbrtg?</td>
+                    <td>Yes</td>
                     <td>31-10-2023 06:04 AM</td>
                     <td>
                       <a href="" class="btn btn-success btn-sm">Edit</a>
@@ -89,60 +150,54 @@
                   </tr>
                   </tbody>
               </table><br><br>
+              </form>
 
-              
-<section class="section">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Add New News</h5><br>
-          <form class="row g-3" action="" method="post" enctype="multipart/form-data">
-            <input type="hidden" name="" value="" autocomplete="off">
-            <div class="form-group">
-                <label class="text-black">Title</label>
-                  @if(isset($news->title))
-                        <input type="text" name="title" class="form-control" placeholder="Title">
-                  @else
-                     <input type="text" name="title" value="title" class="form-control" placeholder="">
-                  @endif
-              </div><br>
-              <div class="col-12">
-              <label class="form-label text-black">Image</label>
-                <input type="file" class="form-control" name="image">
-              </div><br>
-              <div class="form-group">
-                <label class="text-black">Description</label>
-                 @if(isset($news->description))
-                   <textarea id="myTextarea" name="description"  style="width: 100%;"></textarea>
-                @else
-                 <textarea id="myTextarea" name="description" style="width: 100%;"></textarea>
-                @endif
-              </div><br>
-                <div class="col-md-2" style="margin-bottom: 10px;">
-                  <label class="form-label text-black">Date Posted</label>
-                  <input type="date" name="date_posted" value="date_posted" class="form-control">
-                </div>
-                <div class="col-12" style="margin-top: 30px;">
-                   <button type="submit" class="btn btn-success">Submit</button>
-                </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.6.0/tinymce.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.6.0/skins/content/dark/content.min.css" rel="stylesheet">
-       <script>
-            tinymce.init({
+    <script>
+        tinymce.init({
             selector: '#myTextarea',
             plugins: 'advlist autolink lists link image code imagetools media table paste',
             toolbar: 'undo redo | formatselect | bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | link image code media table',
             menubar: false,
-            });
-        </script>
+          });
+    </script>
 
+
+
+            <!-- <div class="row card p-5">
+                <div class="bg-light p-5 rounded">
+                    <h2>Upcoming Updates</h2>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="text-black">Title</label>
+                        @if(isset($upcomingupdates->title))
+                            <input type="text" hidden="" name="id" class="form-control">
+                            <input type="text" name="title" class="form-control" placeholder="Title">
+                        @else
+                         <input type="text" name="title" value="" class="form-control" placeholder="Title">
+                        @endif
+                    </div>
+                     <div class="form-group">
+                        <label class="text-black">Description</label>
+                         @if(isset($upcomingupdates->description))
+                           <textarea id="myTextarea" name="description"  style="width: 100%;"></textarea>
+                        @else
+                         <textarea id="myTextarea" name="description" style="width: 100%;"></textarea>
+                        @endif
+                        
+                    </div>
+                    <div class="form-group">
+                        <label class="text-black">Featured Image</label>
+                        <input type="file" name="file" class="form-control">
+                    </div>
+                    <div>
+                    <br>
+                        <button type="submit" class="btn btn-primary btn-sm">Save</button>
+                    </div>
+                </div>
+            </div> --> 
 
 @endsection

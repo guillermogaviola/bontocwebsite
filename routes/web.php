@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\HomepageController;
 use App\Http\Controllers\Frontend\AboutController;
+use App\Http\Controllers\Frontend\LogoutController;
+use App\Http\Controllers\Frontend\LoginController;
+use App\Http\Controllers\Frontend\RegisterController;
+
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 { 

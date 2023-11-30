@@ -46,7 +46,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
      Route::group(['middleware' => ['guest']], function() {
 
         //Logout Routes
-            Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
+            Route::get('/logout', 'LogoutController@logout')->name('logout.perform');
 
         //Login Routes
             Route::get('/login', 'LoginController@show')->name('login.show');

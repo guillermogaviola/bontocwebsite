@@ -23,84 +23,64 @@
                     <li data-target="#slides" data-slide-to="2" class=""></li>
                     <li data-target="#slides" data-slide-to="3" class=""></li>
                     <li data-target="#slides" data-slide-to="4" class=""></li>
-                    <li data-target="#slides" data-slide-to="5" class=""></li>
-                    <li data-target="#slides" data-slide-to="6" class=""></li>
-                    <li data-target="#slides" data-slide-to="8" class=""></li>
-                    <li data-target="#slides" data-slide-to="9" class=""></li>
                 </ul>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{asset('resources/img/Picture.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
+                    <img src="{{asset('resources/img/Pictureo.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
                       <h3></h3>
                       <p></p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/Picture2.png')}}" class="img-fluid" style="width: 100%; height: 100%;">
+                    <img src="{{asset('resources/img/tourism/anahaocave/anahaocave1.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
-                      <h3></h3>
-                      <p></p>
+                      <h3 style="color: white; font-family: Helvetica;">Anahao Cave</h3>
+                      <p style="color: white;" >Brgy. Anahao, Bontoc, Southern Leyte</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/Picture3.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
+                    <img src="{{asset('resources/img/tourism/anahaocave/anahaocave2.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
-                      <h3></h3>
-                      <p></p>
+                       <h3 style="color: white; font-family: Helvetica;">Anahao Cave</h3>
+                      <p style="color: white;" >Brgy. Anahao, Bontoc, Southern Leyte</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="{{asset('resources/img/tourism/catmoncave/catmoncave3.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
-                      <h3 style="color: white;">Catmon Cave</h3>
-                      <p>Bry. Catmon, Bontoc, So. Leyte</p>
+                      <h3 style="color: white; font-family: Helvetica;">Catmon Cave</h3>
+                      <p style="color: white;" >Brgy. Catmon, Bontoc, Southern Leyte</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/tourism/catmoncave/catmoncave5.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
+                    <img src="{{asset('resources/img/tourism/butongfalls/butongfalls12.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
                     <div class="carousel-caption">
-                      <h3 style="color: white;">Catmon Cave</h3>
-                      <p>Bry. Catmon, Bontoc, So. Leyte</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="{{asset('resources/img/tourism/yumeyaresort/FB_IMG_1694919746940.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
-                    <div class="carousel-caption">
-                      <h3 style="color: white;">Yumeya Mountain Resort</h3>
-                      <p>Brgy. Sto. Nino, Bontoc, So. Leyte</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="{{asset('resources/img/tourism/yumeyaresort/FB_IMG_1694921338546.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
-                    <div class="carousel-caption">
-                      <h3 style="color: white;">Yumeya Mountain Resort</h3>
-                       <p>Brgy. Sto. Nino, Bontoc, So. Leyte</p>
-                    </div>
-                </div>
-                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/tourism/bontocproper/FB_IMG_1694919829911.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
-                    <div class="carousel-caption">
-                      <h3 style="color: white;">Birds-eye view of Bontoc Proper</h3>
-                      <p>Bontoc, Southern Leyte, Philippines</p>
+                      <h3 style="color: white; font-family: Helvetica;" >Butong Falls</h3>
+                      <p style="color: white;">Pamigsian, Bontoc, Southern Leyte</p>
                     </div>
                 </div>
             </div>
+                <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#slides" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
             <br>
             <div class="video-container">
                <iframe style="font-family: 'Montserrat';" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBbtartsDWandererOfficial%2Fvideos%2F309437914951962%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
             </div>       
         </div>
-
         <div class="container-fluid py-3">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-12">
                             <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                                <h3 class="m-0">World Mental Health Month</h3>
-                                <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                                <h5 style="color: black;" class="m-0">World Mental Health Month</h5>
+                                <a class="text-secondary font-weight-medium text-decoration-none" href="#">View All</a>
                             </div>
                         </div>
                         @foreach($news as $value)
@@ -198,7 +178,7 @@
                         </div>
                         <div class="col-12">
                             <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                                <h3 class="m-0">Grand Opening of the Notarial Office of Atty. Mae Angieline T. Salva-Alaras, CPA – a proud Bontocanon.</h3>
+                                <h5 style="color: black;" class="m-0">Grand Opening of the Notarial Office of Atty. Mae Angieline T. Salva-Alaras, CPA – a proud Bontocanon.</h5>
                                 <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
                             </div>
                         </div>
@@ -282,8 +262,8 @@
                         </div>
                         <div class="col-12">
                             <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                                <h3 class="m-0">Kasalan ng Bayan 2023: Celebrating Love and Union in Bontoc
-                                Bontoc, Southern Leyte – November 6, 2023</h3>
+                                <h5 style="color: black;" class="m-0">Kasalan ng Bayan 2023: Celebrating Love and Union in Bontoc
+                                Bontoc, Southern Leyte – November 6, 2023</h5>
                                 <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
                             </div>
                         </div>
@@ -365,26 +345,16 @@
                                 </div>
                             </div>
                         </div>
-
-                    </div>
+                    </div><br><br>
                     <div class="row">
                         <div class="col-12">
-                            <nav aria-label="Page navigation">
+                            <nav aria-label="Page navigation example">
                               <ul class="pagination justify-content-center">
-                                <li class="page-item disabled">
-                                  <a class="page-link" href="#" aria-label="Previous">
-                                    <span class="fa fa-angle-double-left" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                  </a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item">
-                                  <a class="page-link" href="#" aria-label="Next">
-                                    <span class="fa fa-angle-double-right" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                  </a>
-                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
                               </ul>
                             </nav>
                         </div>

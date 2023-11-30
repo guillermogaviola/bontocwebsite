@@ -60,6 +60,39 @@
                         <a href="">description</a>
                     </div>
                 </div>
+                <div class="col-lg-4 mb-4">
+                <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395324091_302999379163806_7386524974371784414_n.jpg') }}" style="object-fit: cover;">
+                    <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Title</a>
+                                <span class="px-1">/</span>
+                                <a href=""><span>Date Posted</span></a> 
+                            </div>
+                        <a href="">description</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395324091_302999379163806_7386524974371784414_n.jpg') }}" style="object-fit: cover;">
+                    <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Title</a>
+                                <span class="px-1">/</span>
+                                <a href=""><span>Date Posted</span></a> 
+                            </div>
+                        <a href="">description</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395324091_302999379163806_7386524974371784414_n.jpg') }}" style="object-fit: cover;">
+                    <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Title</a>
+                                <span class="px-1">/</span>
+                                <a href=""><span>Date Posted</span></a> 
+                            </div>
+                        <a href="">description</a>
+                    </div>
+                </div>
            </div>
         </div>
     </div>

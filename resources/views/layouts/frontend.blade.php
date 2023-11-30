@@ -27,13 +27,8 @@
             color: white;
             font-family: Helvetica;
         }
-        h3{
-            color: red;
-            font-family: 'Helvetica';
-            margin-top: 10px;
-        }
         p{
-            color: white;
+            color: black;
             font-family: 'Helvetica';
         }
         
@@ -46,8 +41,8 @@
         <div class="row" style="background-image: url('{{asset('resources/img/IMG20230719081550.jpg')}}'); background-repeat: no-repeat;background-position: center;background-size: 100% 300%;">
                 <div class="col-sm-10"> <br>
                      <img style="width: 10%; float: left; padding-right: 5px; margin-bottom: 4%;" src="{{asset('resources/img/bontoclogonobg.png')}}">
-                        <h3>Municipality of Bontoc</h3>
-                        <p>Brgy. Poblacion, Bontoc, Southern Leyte, Philippines, 6604</p>
+                        <h3 style="color: red; font-family: 'Helvetica'; margin-top: 10px; ">Municipality of Bontoc</h3>
+                        <p style="color: white;">Brgy. Poblacion, Bontoc, Southern Leyte, Philippines, 6604</p>
                 </div>
                 <div class="col-sm-2" >
                     <p  style="color: white; padding-right: -1px;">Philippine Standard Time <iframe src="https://oras.pagasa.dost.gov.ph/time_display/time/" allowtransparency="true" scrolling="no" frameborder="0" height="30px" width="100%"></iframe></p>
@@ -114,8 +109,8 @@
         </div>
             <button id="submit-button" type="submit" class="btn bg-light">Submit</button>
         </form><hr>
-        <p>Contact Number:<br>+63-9566483040</p>
-        <p>Socials</p>
+        <p style="color: white;">Contact Number:<br>+63-9566483040</p>
+        <p style="color: white;" >Socials</p>
             <p>
                 <a target="_blank" href="https://www.facebook.com/BontocPIO">
                 <img decoding="async" loading="lazy" class="alignnone wp-image-9481" src="{{ asset('resources/img/socialmedias/facebook.png') }}" style="width: 40px;">
@@ -133,7 +128,7 @@
 <!--End Footer Start -->
 
    <!-- Back to Top -->
-    <a href="#" class="btn btn-danger back-to-top"><i class="fa fa-angle-up"></i></a>
+    <a href="#" class="btn btn-info back-to-top"><i class="fa fa-angle-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

@@ -5,7 +5,6 @@ use App\Http\Controllers\Frontend\HomepageController;
 use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\AuthController;
 
-
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 { 
      //Homepage Routes
@@ -49,7 +48,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
         //Logout Routes
             // Route::get('/logout', 'AuthController@logout')->name('logout.perform');
-             Route::get('logout', [AuthController::class, 'logout']);
+            Route::get('logout', [AuthController::class, 'logout']);
 
         //Login Routes
             Route::get('login' , [AuthController::class, 'login_show']);
@@ -57,25 +56,24 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
             // Route::get('/login', 'AuthController@show')->name('login.show');
             // Route::post('/login', 'AuthController@login')->name('login.perform');
 
-            //Register Routes
-            Route::get('register' , [AuthController::class, 'register_show']);
-            Route::post('register' , [AuthController::class, 'create_user']);
-            // Route::get('/register', 'AuthController@show')->name('register.show');
-            // Route::post('/register', 'AuthController@register')->name('register.perform');
+        //Forgot
+        Route::get('forgot-password' , [AuthController::class, 'forgot']);
 
-            //Forgot
-            Route::get('forgot-password' , [AuthController::class, 'forgot']);
-            Route::post('forgot-password' , [AuthController::class, 'forgot_password']);
-
+        // Dashboard
+        Route::get('/admin/dashboard', 'DashboardController@index')->name('admin.dashboard');
 
      });
 
     Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
 
-        
 
-        // Dashboard
-        Route::get('/dashboard', 'DashboardController@index')->name('admin.dashboard');
+        //Register Routes
+        Route::get('register' , [AuthController::class, 'register_show']);
+        Route::post('register' , [AuthController::class, 'create_user']);
+        // Route::get('/register', 'AuthController@show')->name('register.show');
+        // Route::post('/register', 'AuthController@register')->name('register.perform');
+
+        
 
         //Admin Dashboard About Us
         Route::get('/aboutus/history', 'AboutUsController@indexhistory')->name('admin.aboutus.history');

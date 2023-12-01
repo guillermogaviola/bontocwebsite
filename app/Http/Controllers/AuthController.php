@@ -49,27 +49,8 @@ class AuthController extends Controller
     	return view('auth.forgot');
     }
 
-    public function forgot_password(Request $request)
-    {
-       $user = User::where('email', '=', $request->email)->first();
-       if(!empty($user))
-       {
-            $user->remember_token = Str::random(40);
-            $user->save();
-
-            Mail::to($user->email)->send(new ForgotPasswordMail($user));
-
-            return redirect('login')->with('success', "Please check your email and reset your password.");
-       }
-       else
-       {
-            return redirect()->back()->with('error', "Email not found in the system.");
-       }
-    }
-
     public function logout()
     {
-      	Auth::logout();
       	return redirect('/login');
     }
 

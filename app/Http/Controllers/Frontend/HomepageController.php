@@ -9,7 +9,7 @@ use App\Models\NewsandUpdates_news;
 
 class HomepageController extends Controller
 {
-    public function index()
+   public function index()
     {
     	$news = NewsandUpdates_news::all();
         return view('frontend.homepage.index', [

@@ -18,7 +18,7 @@
     <!-- App CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/portal.css">
 
-</head> 
+</head>
 
 <body class="app app-reset-password p-0">    	
     <div class="row g-0 app-auth-wrapper">
@@ -27,11 +27,8 @@
 			    <div class="app-auth-body mx-auto">	
 				    <div class="app-auth-branding mb-4"><a class="app-logo" href="#"><img class="logo-icon me-2" src="{{ asset('assets/images/bontoclogo.png')}}" alt="logo"></a></div>
 					<h2 class="auth-heading text-center mb-4">Password Reset</h2>
-
 					<div class="auth-intro mb-4 text-center">Enter your email address below. We'll email you a link to a page where you can easily create a new password.</div>
-	
 					<div class="auth-form-container text-left">
-						
 						<form class="auth-form resetpass-form">                
 							<div class="email mb-3">
 								<label class="sr-only" for="reg-email">Your Email</label>
@@ -41,21 +38,16 @@
 								<button type="submit" class="btn app-btn-primary btn-block theme-btn mx-auto">Reset Password</button>
 							</div>
 						</form>
-						
 						<div class="auth-option text-center pt-5"><a class="app-link" href="{{ url('login')}}" >Log in</a> <span class="px-2">|</span> <a class="app-link" href="{{ url('register')}}" >Sign up</a></div>
-					</div><!--//auth-form-container-->
-
-
-			    </div><!--//auth-body-->
-		    
+					</div>
+			    </div>
 			    <footer class="app-auth-footer">
 				    <div class="container text-center py-3">
 			        <small class="copyright">Designed with <span class="sr-only">Gaviola</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="app-link" href="" target="_blank">BITS</a> for developers</small>
-				       
 				    </div>
-			    </footer><!--//app-auth-footer-->	
-		    </div><!--//flex-column-->   
-	    </div><!--//auth-main-col-->
+			    </footer>	
+		    </div>  
+	    </div>
 	    <div class="col-12 col-md-5 col-lg-6 h-100 auth-background-col">
 		    <div class="auth-background-holder">
 		    </div>
@@ -70,7 +62,6 @@
 				</div>
 		    </div>
 	    </div>
-    
     </div>
 </body>
 </html> 

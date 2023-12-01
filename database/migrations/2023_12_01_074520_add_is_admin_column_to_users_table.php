@@ -11,11 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('newsand_updates_news', function (Blueprint $table) {
-            $table->string('image_file')->nullable();
-            $table->integer('status')->comment('0: Yes, 1: No');
-            $table->timestamp('date_posted');
-
+        Schema::table('users', function (Blueprint $table) {
+            $table->integer('is_admin')->unsigned()->default(0);
         });
     }
 
@@ -24,7 +21,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('newsand_updates_news', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             //
         });
     }

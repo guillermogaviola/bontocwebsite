@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('tourism_bontocattractions', function (Blueprint $table) {
-            $table->string('image')->nullable();
+        Schema::table('newsand_updates_news', function (Blueprint $table) {
+            $table->integer('status);
         });
     }
 
@@ -21,7 +21,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('tourism_bontocattractions', function (Blueprint $table) {
+        Schema::table('newsand_updates_news', function (Blueprint $table) {
             //
         });
     }

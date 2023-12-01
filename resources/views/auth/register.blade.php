@@ -1,69 +1,39 @@
-
 @extends('layouts.auth')
 @section('content')
 
-<title>Municipality of Bontoc | Register </title>
+<title>Register | Municipality of Bontoc</title>
 
 @include('layouts.partials.message')
 
-<form method="post" action="{{ route('register.perform') }}">
+
+<a href="{{ url('register') }}"></a>
 
 <div class="app-auth-body mx-auto"> 
     <div class="app-auth-branding mb-4"><a class="app-logo" href="index.html">
     <img class="logo-icon me-2" src="{{ asset('assets/images/bontoclogo.png')}}" alt="logo"></a>
     </div>
-    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
     <h2 class="auth-heading text-center mb-5">Register</h2>
     <div class="auth-form-container text-start mx-auto">
-        <form class="auth-form auth-signup-form">         
+        <form class="auth-form auth-signup-form needs-validation" action="" method="post" >
+        {{ csrf_field() }}         
             <div class="email mb-3">
-            <div class="name mb-3"> 
-                <label for="floatingEmail">Name</label>
-               <input type="text" class="form-control" name="name" value="{{ old('name') }}" required="required" autofocus>
-                @if ($errors->has('name'))
-                    <span class="text-danger text-left">{{ $errors->first('name') }}</span>
-                @endif
+            <div class="col-12">
+                      <label for="yourName" class="form-label">Your Name</label>
+                      <input type="text" name="name" class="form-control" id="yourName" required>
+                    </div>
             </div>
-                @if ($errors->has('name'))
-                    <span class="text-danger text-left">{{ $errors->first('name') }}</span>
-                @endif
-            </div>
-            <div class="email mb-3"> 
-                <label for="floatingEmail">Email Address</label>
-               <input type="email" class="form-control" name="email" value="{{ old('email') }}" autofocus>
-               
-                @if ($errors->has('email'))
-                    <span class="text-danger text-left">{{ $errors->first('email') }}</span>
-                @endif
-            </div>
-            <div class="password mb-3">
-                <label for="floatingName">Username</label>
-                <input type="text" class="form-control" name="username" value="{{ old('username') }}" required="required" autofocus>
-
-                @if ($errors->has('username'))
-                    <span class="text-danger text-left">{{ $errors->first('username') }}</span>
-                @endif
-            </div>
-            <div class="email mb-3">
-                 <label for="floatingPassword">Password</label>
-                <input type="password" class="form-control" name="password" value="{{ old('password') }}" required="required">
-           
-                @if ($errors->has('password'))
-                    <span class="text-danger text-left">{{ $errors->first('password') }}</span>
-                @endif
-            </div>
-            <div class="email mb-3">
-                <label for="floatingConfirmPassword">Confirm Password</label>
-                <input type="password" class="form-control" name="password_confirmation" value="{{ old('password_confirmation') }}" required="required">
-                
-                @if ($errors->has('password_confirmation'))
-                    <span class="text-danger text-left">{{ $errors->first('password_confirmation') }}</span>
-                @endif
-            </div>
+            <div class="col-12">
+                      <label for="yourEmail" class="form-label">Your Email</label>
+                      <input type="email" name="email" class="form-control" id="yourEmail" required>
+                    </div>
+            <div class="col-12">
+                      <label for="yourPassword" class="form-label">Password</label>
+                      <input type="password" name="password" class="form-control" id="yourPassword" required>
+                    </div>
             <div class="extra mb-3">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="RememberPassword">
-                    <label class="form-check-label" for="RememberPassword">
+                    <input class="form-check-input" name="terms" type="checkbox" id="acceptTerms" required>
+                    <label class="form-check-label" for="acceptTerms">
                     I accept the <a href="#" class="app-link">Terms of Service</a> and <a href="#" class="app-link">Privacy Statement of the Portal</a>.
                     </label>
                 </div>
@@ -72,8 +42,7 @@
                 <button type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto">Sign Up</button>
             </div>
         </form>
-        <div class="auth-option text-center pt-5">Already have an account? <a class="text-link" href="{{route('register.show')}}">Log in.</a></div>
+        <div class="auth-option text-center pt-5">Already have an account? <a class="text-link" href="{{ url('login')}}">Log in.</a></div>
     </div>                 
 </div>
-</form>
 @endsection

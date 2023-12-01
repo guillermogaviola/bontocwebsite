@@ -1,12 +1,12 @@
 @extends('layouts.auth')
 @section('content')
 
-<title>Municipality of Bontoc | Login</title>
+<title>Login | Municipality of Bontoc</title>
 
 @include('layouts.partials.message')
 
-<form method="post" action="{{ route('login.perform') }}">
-@csrf
+<a href="{{ url('login') }}"></a>
+
     <div class="app-auth-body mx-auto"> 
         <div class="app-auth-branding mb-4"><a class="app-logo" href="index.html">
             <img class="logo-icon me-2" src="{{ asset('assets/images/bontoclogo.png')}}" alt="logo"></a>
@@ -15,11 +15,8 @@
         <div class="auth-form-container text-start">
             <form class="auth-form login-form">         
                 <div class="email mb-3">
-                <label for="floatingName">Username</label>
+                <label for="floatingName">Email</label>
                 <input type="text" class="form-control" name="username" value="{{ old('username') }}" required="required" autofocus>
-                @if ($errors->has('username'))
-                <span class="text-danger text-left">{{ $errors->first('username') }}</span>
-                @endif
                 </div>
             <div class="password mb-3">
             <label for="floatingPassword">Password</label>
@@ -36,7 +33,7 @@
                     </div>
                     <div class="col-6">
                         <div class="forgot-password text-end">
-                            <a href="reset-password.html">Forgot password?</a>
+                            <a href="{{ url('forgot-password') }}">Forgot password?</a>
                         </div>
                     </div>
                 </div>
@@ -45,9 +42,8 @@
                     <button type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto">Log In</button>
                 </div>
             </form>
-            <div class="auth-option text-center pt-5">No Account? <a class="text-link" href="{{route('register.show')}}" >Register </a>here.
+            <div class="auth-option text-center pt-5">No Account? <a class="text-link" href="{{ url('register')}}" >Register </a>here.
             </div>
         </div> 
     </div>
-</form>
 @endsection

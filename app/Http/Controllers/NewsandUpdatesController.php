@@ -33,7 +33,7 @@ class NewsandUpdatesController extends Controller
             $formsave->date_posted = $request->date_posted;
 
                 $target_dir = "resources/img/news/";
-                $target_file = $target_dir . basename($_FILES["image"]["name"]);
+                $target_file = $target_dir . basename($_FILES["image_file"]["name"]);
                 $uploadOk = 1;
                 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 

@@ -32,15 +32,11 @@
                 @endif
             </div><br>
             <div class="col-12">
-                  <label for="inputPassword4" class="form-label">Is Featured? *</label>
+                  <label for="inputPassword4" class="form-label text-black">Is Featured? *</label>
                   <select class="form-control" name="status">
                     <option value="1">Yes</option>
                     <option value="0">No</option>
                   </select>
-                  <!-- <select class="form-control" name="status">
-                    <option {{ ($getRecord->status == 1 ) ? 'selected' : '' }} value="1">Active</option>
-                    <option {{ ($getRecord->status == 0 ) ? 'selected' : '' }} value="0">Inactive</option>
-                  </select> -->
                 </div>
                 <div class="col-md-2" style="margin-bottom: 10px;">
                   <label class="form-label text-black">Date Posted</label>

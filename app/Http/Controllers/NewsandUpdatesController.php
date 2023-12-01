@@ -29,6 +29,8 @@ class NewsandUpdatesController extends Controller
             $formsave = new NewsandUpdates_news();
             $formsave->title = $request->title;
             $formsave->description = $request->description;
+            $formsave->status = $request->status;
+            $formsave->date_posted = $request->date_posted;
 
                 $target_dir = "resources/img/news/";
                 $target_file = $target_dir . basename($_FILES["image"]["name"]);

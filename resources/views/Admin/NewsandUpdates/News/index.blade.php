@@ -12,7 +12,7 @@
                           <input type="hidden" name="" value="" autocomplete="off">
                             <div class="form-group">
                               <label class="text-black">Title</label>
-                            @if(isset($jobvacancies->title))
+                            @if(isset($news->title))
                         <input type="text" hidden="" name="id" class="form-control">
                       <input type="text" name="title" class="form-control" placeholder="Title">
                   @else
@@ -25,7 +25,7 @@
             </div><br>
             <div class="form-group">
                 <label class="text-black">Description</label>
-                 @if(isset($jobvacancies->description))
+                 @if(isset($news->description))
                    <textarea id="myTextarea" name="description"  style="width: 100%;"></textarea>
                 @else
                  <textarea id="myTextarea" name="description" style="width: 100%;"></textarea>

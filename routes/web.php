@@ -57,10 +57,10 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
             // Route::post('/login', 'AuthController@login')->name('login.perform');
 
         //Forgot
-        Route::get('forgot-password' , [AuthController::class, 'forgot']);
+            Route::get('forgot-password' , [AuthController::class, 'forgot']);
 
-        // Dashboard
-        Route::get('/admin/dashboard', 'DashboardController@index')->name('admin.dashboard');
+
+        
 
      });
 
@@ -68,12 +68,13 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
 
         //Register Routes
-        Route::get('register' , [AuthController::class, 'register_show']);
-        Route::post('register' , [AuthController::class, 'create_user']);
-        // Route::get('/register', 'AuthController@show')->name('register.show');
-        // Route::post('/register', 'AuthController@register')->name('register.perform');
+            Route::get('register' , [AuthController::class, 'register_show']);
+            Route::post('register' , [AuthController::class, 'create_user']);
+            // Route::get('/register', 'AuthController@show')->name('register.show');
+            // Route::post('/register', 'AuthController@register')->name('register.perform');
 
-        
+        // Dashboard
+            Route::get('/admin/dashboard', 'DashboardController@index')->name('admin.dashboard');
 
         //Admin Dashboard About Us
         Route::get('/aboutus/history', 'AboutUsController@indexhistory')->name('admin.aboutus.history');

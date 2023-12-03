@@ -2,34 +2,11 @@
 
 @section('content')
     <div class="container">
-        <form method="POST" action="" enctype="multipart/form-data">
-            @csrf
+        <form>
             <div class="row card">
                 <div class="bg-light p-5 rounded">
                     <h2 style="text-align: center;">Administrator | Dashboard</h2>
                 </div>
-                <!-- <div class="col-sm-12">
-                    <div class="form-group">
-                        @if(isset($jobvacancies->title))
-                            <input type="text" hidden="" name="id" class="form-control">
-                            <input type="text" name="title" class="form-control" placeholder="Title">
-                        @else
-                         <input type="text" name="title" value="" class="form-control" placeholder="Title">
-                        @endif
-                    </div>
-                     <div class="form-group">
-                        <label class="text-black">Description</label>
-                         @if(isset($jobvacancies->description))
-                           <textarea id="myTextarea" name="description"  style="width: 100%;"></textarea>
-                        @else
-                         <textarea id="myTextarea" name="description" style="width: 100%;"></textarea>
-                        @endif
-                    </div>
-                    <div>
-                    <br>
-                        <button type="submit" class="btn btn-primary btn-sm">Save</button>
-                    </div>
-                </div> -->
             </div> 
         </form>
     </div>

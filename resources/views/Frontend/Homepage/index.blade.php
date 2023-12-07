@@ -83,21 +83,6 @@
                                 <a class="text-secondary font-weight-medium text-decoration-none" href="#">View All</a>
                             </div>
                         </div>
-                        @foreach($news as $value)
-                            <div class="col-lg-2">
-                                <div class="position-relative mb-3">
-                                    <img class="img-fluid w-100" src="/{{ $value->image }}" style="object-fit: cover;">
-                                    <div class="overlay position-relative bg-light">
-                                        <div class="mb-2" style="font-size: 14px;">
-                                            <a href="">{{ $value->title}}</a>
-                                            <span class="px-1">/</span>
-                                            <span>October 27, 2023</span>
-                                        </div>
-                                        <a class="h6" href="">{{ $value->description}}</a>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
                         <div class="col-lg-2">
                             <div class="position-relative mb-3">
                                 <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395316821_303000189163725_2409139856403516309_n.jpg') }}" style="object-fit: cover;">

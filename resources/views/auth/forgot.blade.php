@@ -43,7 +43,17 @@
 			    </div>
 			    <footer class="app-auth-footer">
 				    <div class="container text-center py-3">
-			        <small class="copyright">Designed with <span class="sr-only">Gaviola</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="app-link" href="" target="_blank">BITS</a> for developers</small>
+			        <small class="copyright">Designed by <span class="sr-only"></span>
+			        	<i class="fas fa-g" style="color: green;"></i>
+			        	<i class="fas fa-a" style="color: green;"></i>
+			        	<i class="fas fa-v" style="color: green;"></i>
+			        	<i class="fas fa-i" style="color: green;"></i>
+			        	<i class="fas fa-o" style="color: green;"></i>
+			        	<i class="fas fa-l" style="color: green;"></i>
+			        	<i class="fas fa-a" style="color: green;"></i>
+			        	<!--  by  -->
+			        	 <!-- <a class="app-link" href="#" target="_blank">BITS Developers</a> -->
+			        	 </small>
 				    </div>
 			    </footer>	
 		    </div>  
@@ -57,7 +67,7 @@
 				    <div class="h-100"></div>
 				    <div class="overlay-content p-3 p-lg-4 rounded">
                         <h5 class="mb-3 overlay-title">The Local Government Unit Of Bontoc</h5>
-                        <div>You can visit our Official Facebook page <a href="https://www.facebook.com/BontocPIO">here</a>.</div>
+                        <div>You can visit our Official Facebook page <a target="_blank" href="https://www.facebook.com/BontocPIO">here</a>.</div>
                     </div>
 				</div>
 		    </div>

@@ -34,8 +34,10 @@
             </div> 
         </form>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.6.0/tinymce.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.6.0/skins/content/dark/content.min.css" rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.6.0/tinymce.min.js"></script> -->
+    <script src="{{ url('tinymce/js/tinymce.min.js') }}"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.6.0/skins/content/dark/content.min.css" rel="stylesheet"> -->
+    <link href="{{ url('tinymce/css/content.min.css') }}" rel="stylesheet">
     <script>
         tinymce.init({
             selector: '#myTextarea',

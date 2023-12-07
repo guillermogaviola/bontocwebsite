@@ -18,12 +18,12 @@
         {{ csrf_field() }}         
             <div class="email mb-3">
             <div class="col-12">
-                      <label for="yourName" class="form-label">Your Name</label>
+                      <label for="yourName" class="form-label">Name</label>
                       <input type="text" name="name" class="form-control" id="yourName" required>
                     </div>
             </div>
             <div class="col-12">
-                      <label for="yourEmail" class="form-label">Your Email</label>
+                      <label for="yourEmail" class="form-label">Email</label>
                       <input type="email" name="email" class="form-control" id="yourEmail" required>
                     </div>
             <div class="col-12">

@@ -13,9 +13,18 @@ class AuthController extends Controller
     	return view('auth.login');
     }
 
-    public function login_perform()
+    public function login_perform(Request $request)
     {
-    	return view('auth.login');
+        $remember = !empty($request->remember) ? true : false;
+
+        if(Auth::attempt(['email' => $request->email, 'password' => $request->password ]))
+        {
+            if(!empty(Auth::user()->email_verified_at))
+            {
+                return redirect('dashboard');
+            }
+           
+        }
     }
 
      public function register_show()

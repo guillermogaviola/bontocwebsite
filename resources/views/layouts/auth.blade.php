@@ -32,7 +32,7 @@
                     <div class="h-100"></div>
                     <div class="overlay-content p-3 p-lg-4 rounded">
                         <h5 class="mb-3 overlay-title">The Local Government Unit Of Bontoc</h5>
-                        <div>You can visit our Official Facebook page <a href="https://www.facebook.com/BontocPIO">here</a>.</div>
+                        <div>You can visit our Official Facebook page <a target="_blank" href="https://www.facebook.com/BontocPIO">here</a>.</div>
                     </div>
                 </div>
             </div>

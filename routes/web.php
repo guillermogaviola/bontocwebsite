@@ -43,12 +43,13 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
      Route::get('/others/downloadableforms', 'Frontend\OthersController@indexdownloadableforms')->name('others.downloadableforms');
      Route::get('/others/gallery', 'Frontend\OthersController@indexgallery')->name('others.gallery');
      Route::get('/others/memorandom', 'Frontend\OthersController@indexmemorandom')->name('others.memorandom');
+     
 
      Route::group(['middleware' => ['guest']], function() {
 
         //Logout Routes
-            // Route::get('/logout', 'AuthController@logout')->name('logout.perform');
             Route::get('logout', [AuthController::class, 'logout']);
+            // Route::get('/logout', 'AuthController@logout')->name('logout.perform');
 
         //Login Routes
             Route::get('login' , [AuthController::class, 'login_show']);
@@ -59,19 +60,12 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         //Forgot
             Route::get('forgot-password' , [AuthController::class, 'forgot']);
 
-
-        
-
-     });
-
-    Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
-
-
-        //Register Routes
+                //Register Routes
             Route::get('register' , [AuthController::class, 'register_show']);
             Route::post('register' , [AuthController::class, 'create_user']);
             // Route::get('/register', 'AuthController@show')->name('register.show');
             // Route::post('/register', 'AuthController@register')->name('register.perform');
+
 
         // Dashboard
             Route::get('/admin/dashboard', 'DashboardController@index')->name('admin.dashboard');
@@ -79,9 +73,10 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         //Admin Dashboard About Us
         Route::get('/aboutus/history', 'AboutUsController@indexhistory')->name('admin.aboutus.history');
         Route::post('/aboutus/history/add', 'AboutUsController@addhistory')->name('admin.aboutus.history.add');
-                 
+
         Route::get('/aboutus/location', 'AboutUsController@indexlocation')->name('admin.aboutus.location');
         Route::post('/aboutus/location/add', 'AboutUsController@addlocation')->name('admin.aboutus.location.add');
+    
                  
         Route::get('/aboutus/missionandvision', 'AboutUsController@indexmissionandvision')->name('admin.aboutus.missionandvision');
         Route::post('/aboutus/missionandvision/add', 'AboutUsController@addmissionandvision')->name('admin.aboutus.missionandvision.add');
@@ -134,4 +129,11 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::get('/others/memorandom', 'OthersController@indexmemorandom')->name('admin.others.memorandom');
         Route::post('/others/memorandom/add', 'OthersController@addmemorandom')->name('admin.others.memorandom.add');
     });
+
+        
+     });
+
+    Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
+
+
 });

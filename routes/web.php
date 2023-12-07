@@ -59,16 +59,20 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
         //Forgot
             Route::get('forgot-password' , [AuthController::class, 'forgot']);
+            
 
-                //Register Routes
+        //Register Routes
             Route::get('register' , [AuthController::class, 'register_show']);
             Route::post('register' , [AuthController::class, 'create_user']);
             // Route::get('/register', 'AuthController@show')->name('register.show');
             // Route::post('/register', 'AuthController@register')->name('register.perform');
+    
+     });
 
+    Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
 
         // Dashboard
-            Route::get('/admin/dashboard', 'DashboardController@index')->name('admin.dashboard');
+        Route::get('/dashboard', 'DashboardController@index')->name('admin.dashboard');
 
         //Admin Dashboard About Us
         Route::get('/aboutus/history', 'AboutUsController@indexhistory')->name('admin.aboutus.history');
@@ -77,7 +81,6 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::get('/aboutus/location', 'AboutUsController@indexlocation')->name('admin.aboutus.location');
         Route::post('/aboutus/location/add', 'AboutUsController@addlocation')->name('admin.aboutus.location.add');
     
-                 
         Route::get('/aboutus/missionandvision', 'AboutUsController@indexmissionandvision')->name('admin.aboutus.missionandvision');
         Route::post('/aboutus/missionandvision/add', 'AboutUsController@addmissionandvision')->name('admin.aboutus.missionandvision.add');
                  
@@ -128,12 +131,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
         Route::get('/others/memorandom', 'OthersController@indexmemorandom')->name('admin.others.memorandom');
         Route::post('/others/memorandom/add', 'OthersController@addmemorandom')->name('admin.others.memorandom.add');
+    
+
     });
-
-        
-     });
-
-    Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
-
-
 });

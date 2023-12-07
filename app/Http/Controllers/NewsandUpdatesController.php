@@ -45,18 +45,12 @@ class NewsandUpdatesController extends Controller
 
     public function addupcomingupdates(Request $request) 
     {
-        // if ($request->id) {
-        //     $update = Careers_jobvacancies::find($request->id);
-        //     $update->title = $request->title;
-        //     $update->description = $request->description;
-        //     $update->save();
-        // } else {
             $formsave = new NewsandUpdates_upcomingupdates();
             $formsave->title = $request->title;
             $formsave->description = $request->description;
             
             $formsave->save();
-        // }
+    
         return redirect()->back();
     }
 }

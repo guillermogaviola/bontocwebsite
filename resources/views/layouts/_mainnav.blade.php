@@ -32,7 +32,7 @@
             </button>
             <div class="navbar-collapse justify-content-between px-0 px-lg-3 collapse show bg-success" id="navbarCollapse" style="">
                 <div class="navbar-nav mr-auto py-0">
-                    <a href="{{ route('homepage')}}" class="nav-item nav-link">Home</a>
+                    <a href="{{ route('home')}}" class="nav-item nav-link">Home</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
                         <div class="dropdown-menu rounded-0 m-0">

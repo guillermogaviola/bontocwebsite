@@ -1,14 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Frontend\HomepageController;
+use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 { 
      //Homepage Routes
-      Route::get('/', 'Frontend\HomepageController@index')->name('homepage');
+      Route::get('/', 'Frontend\HomeController@home')->name('home');
 
      // AboutUs Routes
       Route::get('/about/history', 'Frontend\AboutController@indexhistory')->name('about.history');
@@ -61,18 +62,11 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
             Route::get('forgot-password' , [AuthController::class, 'forgot']);
             
 
-        //Register Routes
-            Route::get('register' , [AuthController::class, 'register_show']);
-            Route::post('register' , [AuthController::class, 'create_user']);
-            // Route::get('/register', 'AuthController@show')->name('register.show');
-            // Route::post('/register', 'AuthController@register')->name('register.perform');
-    
-     });
-
-    Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
-
         // Dashboard
-        Route::get('/dashboard', 'DashboardController@index')->name('admin.dashboard');
+            Route::get('dashboard', 'DashboardController@dashboard')->name('dashboard');
+
+        // Home
+            Route::get('dashboard/home', [DashboardController::class, 'home']);
 
         //Admin Dashboard About Us
         Route::get('/aboutus/history', 'AboutUsController@indexhistory')->name('admin.aboutus.history');
@@ -95,6 +89,21 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
         Route::get('/aboutus/directory', 'AboutUsController@indexdirectory')->name('admin.aboutus.directory');
         Route::post('/aboutus/directory/add', 'AboutUsController@adddirectory')->name('admin.aboutus.directory.add');
+
+
+        
+    
+});
+
+    Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
+
+        //Register Routes
+            Route::get('register' , [AuthController::class, 'register_show']);
+            Route::post('register' , [AuthController::class, 'create_user']);
+            // Route::get('/register', 'AuthController@show')->name('register.show');
+            // Route::post('/register', 'AuthController@register')->name('register.perform');
+
+        
 
         //Admin Dashboard Careers
         Route::get('/careers/jobvacancies', 'CareersController@indexjobvacancies')->name('admin.careers.jobvacancies');
@@ -134,4 +143,10 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
     
 
     });
+
+
+
+
+
+        
 });

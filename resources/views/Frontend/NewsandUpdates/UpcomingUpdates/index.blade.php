@@ -2,10 +2,6 @@
 
 @section('content')
 
-@extends('layouts.frontend')
-
-@section('content')
-
 <style>
     h1{
         text-align: center;
@@ -30,7 +26,7 @@
         <div class="col-lg-4 mb-3">
             <div class="row">
                 <div class="col-lg-12">
-                    <img src="/{{ $news->image }}" width="350px" height="200px">
+                    <img src="" width="350px" height="200px">
                 </div>
                 <div class="col-lg-12">
                     <a href="#"><h5></h5></a>

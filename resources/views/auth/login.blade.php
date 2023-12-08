@@ -5,43 +5,39 @@
 
 @include('layouts.partials.message')
 
-<a href="{{ url('login') }}"></a>
-
     <div class="app-auth-body mx-auto"> 
         <div class="app-auth-branding mb-4"><a class="app-logo" href="index.html">
             <img class="logo-icon me-2" src="{{ asset('assets/images/bontoclogo.png')}}" alt="logo"></a>
         </div>
     <h2 class="auth-heading text-center mb-5">Login</h2>
         <div class="auth-form-container text-start">
-            <form class="auth-form login-form">         
-                <div class="email mb-3">
-                <label for="floatingName">Email</label>
-                <input type="text" class="form-control" name="username" value="{{ old('username') }}" required="required" autofocus>
-                </div>
-            <div class="password mb-3">
-            <label for="floatingPassword">Password</label>
-            <input type="password" class="form-control" name="password" value="{{ old('password') }}" required="required">
-            @if ($errors->has('password'))
-            <span class="text-danger text-left">{{ $errors->first('password') }}</span>
-            @endif
-                <div class="extra mt-3 row justify-content-between">
-                    <div class="col-6">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="RememberPassword">
-                            <label class="form-check-label" for="RememberPassword">Remember me</label>
-                        </div>
+            <form class="row g-3 needs-validation" action="" method="post">
+                    {{ csrf_field() }}
+                    <div class="col-12">
+                      <label for="yourEmail" class="form-label">Email</label>
+                      <div class="input-group has-validation">
+                        <input type="email" name="email" class="form-control" id="yourEmail" required>
+                      </div>
                     </div>
-                    <div class="col-6">
-                        <div class="forgot-password text-end">
-                            <a href="{{ url('forgot-password') }}">Forgot password?</a>
-                        </div>
+                    <div class="col-12">
+                      <label for="yourPassword" class="form-label">Password</label>
+                      <input type="password" name="password" class="form-control" id="yourPassword" required>
                     </div>
-                </div>
-            </div>
-                <div class="text-center">
-                    <button type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto">Log In</button>
-                </div>
-            </form>
+
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                      </div>
+                      <div class="col-12">
+                      <p class="small mb-0" style="margin-top: 20px;">
+                        <a href="{{url('forgot-password')}}">Forgot Password?</a></p>
+                    </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-success w-100" type="submit">Login</button>
+                    </div>
+                  </form>
             <div class="auth-option text-center pt-5">No Account? <a class="text-link" href="{{ url('register')}}" >Register </a>here.
             </div>
         </div> 

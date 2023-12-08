@@ -10,7 +10,6 @@
     }
 </style>
 
-
 <div class="container">
   @if(isset($history->title))
         <h1><span>{{$history->title}}</span></h1>

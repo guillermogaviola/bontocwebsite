@@ -27,16 +27,13 @@
                     <div class="col-12">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
-                        <label class="form-check-label" for="rememberMe">Remember me</label>
-                      </div>
-                      <div class="col-12">
-                      <p class="small mb-0" style="margin-top: 20px;">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="{{url('forgot-password')}}">Forgot Password?</a></p>
+                      </div>
                     </div>
-                    </div>
-                    <div class="col-12">
-                      <button class="btn btn-success w-100" type="submit">Login</button>
-                    </div>
+                    <div class="text-center">
+                <button type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto">Login</button>
+            </div>
                   </form>
             <div class="auth-option text-center pt-5">No Account? <a class="text-link" href="{{ url('register')}}" >Register </a>here.
             </div>

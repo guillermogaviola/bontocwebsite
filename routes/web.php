@@ -50,26 +50,18 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
         //Logout Routes
             Route::get('logout', [AuthController::class, 'logout']);
-            // Route::get('/logout', 'AuthController@logout')->name('logout.perform');
 
         //Login Routes
             Route::get('login' , [AuthController::class, 'login_show']);
             Route::post('login' , [AuthController::class, 'login_perform']);
-            // Route::get('/login', 'AuthController@show')->name('login.show');
-            // Route::post('/login', 'AuthController@login')->name('login.perform');
-
-        //Forgot
-            Route::get('forgot-password' , [AuthController::class, 'forgot']); 
-
-});
-
-    Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
 
         //Register Routes
             Route::get('register' , [AuthController::class, 'register_show']);
             Route::post('register' , [AuthController::class, 'create_user']);
-            // Route::get('/register', 'AuthController@show')->name('register.show');
-            // Route::post('/register', 'AuthController@register')->name('register.perform');
+
+        //Forgot
+            Route::get('forgot-password' , [AuthController::class, 'forgot']);
+
 
         // Dashboard
             Route::get('dashboard', 'DashboardController@dashboard')->name('dashboard');
@@ -99,6 +91,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::get('/aboutus/directory', 'AboutUsController@indexdirectory')->name('admin.aboutus.directory');
         Route::post('/aboutus/directory/add', 'AboutUsController@adddirectory')->name('admin.aboutus.directory.add');
 
+});
+
+    Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
 
         //Admin Dashboard Careers
         Route::get('/careers/jobvacancies', 'CareersController@indexjobvacancies')->name('admin.careers.jobvacancies');

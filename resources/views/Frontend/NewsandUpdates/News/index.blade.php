@@ -2,10 +2,6 @@
 
 @section('content')
 
-@extends('layouts.frontend')
-
-@section('content')
-
 <style>
     h1{
         text-align: center;

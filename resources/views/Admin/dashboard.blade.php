@@ -10,14 +10,4 @@
             </div> 
         </form>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.6.0/tinymce.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.6.0/tinymce.min.js"></script>
-    <script>
-        tinymce.init({
-            selector: '#myTextarea',
-            plugins: 'advlist autolink lists link image code imagetools media table paste',
-            toolbar: 'undo redo | formatselect | bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | link image code media table',
-            menubar: false,
-          });
-    </script>
 @endsection

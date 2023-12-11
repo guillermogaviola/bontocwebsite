@@ -29,7 +29,7 @@
             <div class="col-12">
                       <label for="yourPassword" class="form-label">Password</label>
                       <input type="password" name="password" class="form-control" id="yourPassword" required>
-                    </div>
+                    </div><br>
             <div class="extra mb-3">
                 <div class="form-check">
                     <input class="form-check-input" name="terms" type="checkbox" id="acceptTerms" required>

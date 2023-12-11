@@ -11,7 +11,7 @@
         </div>
     <h2 class="auth-heading text-center mb-5">Login</h2>
         <div class="auth-form-container text-start">
-            <form class="row g-3 needs-validation" action="" method="post">
+            <form class="row g-3 needs-validation" action="{{ route('login.perform') }}" method="post">
                     {{ csrf_field() }}
                     <div class="col-12">
                       <label for="yourEmail" class="form-label">Email</label>

@@ -46,22 +46,21 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
      Route::get('/others/memorandom', 'Frontend\OthersController@indexmemorandom')->name('others.memorandom');
      
 
-     Route::group(['middleware' => ['guest']], function() {
+    //Logout Routes
+        Route::get('logout', [AuthController::class, 'logout'])->name('logout');;
 
-        //Logout Routes
-            Route::get('logout', [AuthController::class, 'logout']);
+    //Login Routes
+        Route::get('login' , [AuthController::class, 'login_show'])->name('login.show');
+        Route::post('login' , [AuthController::class, 'login_perform'])->name('login.perform');
 
-        //Login Routes
-            Route::get('login' , [AuthController::class, 'login_show']);
-            Route::post('login' , [AuthController::class, 'login_perform']);
+    //Register Routes
+        Route::get('register' , [AuthController::class, 'register_show']);
+        Route::post('register' , [AuthController::class, 'create_user']);
 
-        //Register Routes
-            Route::get('register' , [AuthController::class, 'register_show']);
-            Route::post('register' , [AuthController::class, 'create_user']);
+    //Forgot
+        Route::get('forgot-password' , [AuthController::class, 'forgot']); 
 
-        //Forgot
-            Route::get('forgot-password' , [AuthController::class, 'forgot']);
-
+    Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
 
         // Dashboard
             Route::get('dashboard', 'DashboardController@dashboard')->name('dashboard');
@@ -94,12 +93,6 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         //Admin Dashboard Careers
         Route::get('/careers/jobvacancies', 'CareersController@indexjobvacancies')->name('admin.careers.jobvacancies');
         Route::post('/careers/jobvacancies/add', 'CareersController@addjobvacancies')->name('admin.careers.jobvacancies.add');
-
-});
-
-    Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
-
-        
 
         //Admin Dashboard Services
         Route::get('/services/mayorsoffice', 'ServicesController@indexmayorsoffice')->name('admin.services.mayorsoffice');

@@ -3,11 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Hash;
+use Session;
 
 class AuthController extends Controller
 {
+    use AuthenticatesUsers;
+
+    public function __construct()
+    {
+        $this->middleware('guest')->except('logout');
+    }
+
     public function login_show()
     {
         return view('auth.login');
@@ -15,8 +25,16 @@ class AuthController extends Controller
 
     public function login_perform(Request $request)
     {
-        return redirect('dashboard');
-    
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+        $checkLoginCredentials = $request->only('email','password');
+        if(Auth::attempt($checkLoginCredentials))
+        {
+            return redirect('admin/dashboard')->withSuccess('You are successfully loggedin.');
+        }
+        return redirect('login')->withSuccess('You login credentials are incorrect.');
     }
 
      public function register_show()
@@ -43,6 +61,8 @@ class AuthController extends Controller
 
     public function logout()
     {
+        Session::flush();
+        Auth::logout();
         return redirect('/login');
     }
 }

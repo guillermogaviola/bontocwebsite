@@ -31,13 +31,27 @@
             color: black;
             font-family: 'Helvetica';
         }
+        .photo-overlay {
+            width: 120%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background: rgb(0,48,103);
+            background: linear-gradient(179deg, rgba(0,48,103,1) 0%, rgba(0,212,255,0) 75%);
+        }
         
     </style>
 </head>
 <body>
     <div class="container-fluid">
+
         <div class="row" style="background-image: url('{{asset('resources/img/IMG20230719081550.jpg')}}'); background-repeat: no-repeat;background-position: center;background-size: 100% 300%;">
                 <div class="col-sm-10"> <br>
+                    <div class="photo-overlay"></div>
                      <img style="width: 10%; float: left; padding-right: 5px; margin-bottom: 4%;" src="{{asset('resources/img/bontoclogonobg.png')}}">
                         <h3 style="color: red; font-family: 'Helvetica'; margin-top: 10px; ">Municipality of Bontoc</h3>
                         <p style="color: white;">Brgy. Poblacion, Bontoc, Southern Leyte, Philippines, 6604</p>

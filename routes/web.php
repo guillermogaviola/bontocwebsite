@@ -54,8 +54,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::post('login' , [AuthController::class, 'login_perform'])->name('login.perform');
 
     //Register Routes
-        Route::get('register' , [AuthController::class, 'register_show']);
-        Route::post('register' , [AuthController::class, 'create_user']);
+        // Route::get('register' , [AuthController::class, 'register_show']);
+        // Route::post('register' , [AuthController::class, 'create_user']);
 
     //Forgot
         Route::get('forgot-password' , [AuthController::class, 'forgot']); 
@@ -125,7 +125,5 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
         Route::get('/others/memorandom', 'OthersController@indexmemorandom')->name('admin.others.memorandom');
         Route::post('/others/memorandom/add', 'OthersController@addmemorandom')->name('admin.others.memorandom.add');
-    
-
     }); 
 });

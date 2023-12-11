@@ -40,8 +40,8 @@
             bottom: 0;
             right: 0;
             margin: auto;
-            background: rgb(0,48,103);
-            background: linear-gradient(179deg, rgba(0,48,103,1) 0%, rgba(0,212,255,0) 75%);
+            background: rgb(20 69 125 / 59%);
+            /*background: linear-gradient(179deg, rgba(0,48,103,1) 0%, rgba(0,212,255,0) 75%);*/
         }
         
     </style>

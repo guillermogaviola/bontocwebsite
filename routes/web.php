@@ -91,13 +91,15 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::get('/aboutus/directory', 'AboutUsController@indexdirectory')->name('admin.aboutus.directory');
         Route::post('/aboutus/directory/add', 'AboutUsController@adddirectory')->name('admin.aboutus.directory.add');
 
+        //Admin Dashboard Careers
+        Route::get('/careers/jobvacancies', 'CareersController@indexjobvacancies')->name('admin.careers.jobvacancies');
+        Route::post('/careers/jobvacancies/add', 'CareersController@addjobvacancies')->name('admin.careers.jobvacancies.add');
+
 });
 
     Route::group(['middleware' => ['auth'],'prefix'=> 'admin'], function() {
 
-        //Admin Dashboard Careers
-        Route::get('/careers/jobvacancies', 'CareersController@indexjobvacancies')->name('admin.careers.jobvacancies');
-        Route::post('/careers/jobvacancies/add', 'CareersController@addjobvacancies')->name('admin.careers.jobvacancies.add');
+        
 
         //Admin Dashboard Services
         Route::get('/services/mayorsoffice', 'ServicesController@indexmayorsoffice')->name('admin.services.mayorsoffice');
@@ -132,11 +134,5 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::post('/others/memorandom/add', 'OthersController@addmemorandom')->name('admin.others.memorandom.add');
     
 
-    });
-
-
-
-
-
-        
+    }); 
 });

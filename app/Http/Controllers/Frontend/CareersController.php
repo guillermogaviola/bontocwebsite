@@ -10,9 +10,9 @@ class CareersController extends Controller
 {
     public function indexjobvacancies()
     {
-        $history = Careers_jobvacancies::first();
-        return view('frontend.about.history.index',[
-                'history' => $history
+        $careers = Careers_jobvacancies::first();
+        return view('frontend.careers.jobvacancies.index',[
+                'careers' => $careers
         ]);
     }
     

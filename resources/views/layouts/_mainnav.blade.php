@@ -75,7 +75,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Careers</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="{{route('careers.jobvacancies')}}" class="dropdown-item">Job Vacancies</a>
+                            <a href="{{ route('careers.jobvacancies')}}" class="dropdown-item">Job Vacancies</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">

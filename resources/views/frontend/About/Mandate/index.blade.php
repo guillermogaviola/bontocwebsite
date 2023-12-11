@@ -9,8 +9,6 @@
         font-family: Helvetica; 
     }
 </style>
-
-
 <div class="container">
   @if(isset($mandate->title))
         <h1><span>{{$mandate->title}}</span></h1>

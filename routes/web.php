@@ -69,26 +69,26 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
             Route::get('dashboard/home', [DashboardController::class, 'home']);
 
         //Admin Dashboard About Us
-        Route::get('/aboutus/history', 'AboutUsController@indexhistory')->name('admin.aboutus.history');
-        Route::post('/aboutus/history/add', 'AboutUsController@addhistory')->name('admin.aboutus.history.add');
+        Route::get('/aboutus/history', 'AboutusController@indexhistory')->name('admin.aboutus.history');
+        Route::post('/aboutus/history/add', 'AboutusController@addhistory')->name('admin.aboutus.history.add');
 
-        Route::get('/aboutus/location', 'AboutUsController@indexlocation')->name('admin.aboutus.location');
-        Route::post('/aboutus/location/add', 'AboutUsController@addlocation')->name('admin.aboutus.location.add');
+        Route::get('/aboutus/location', 'AboutusController@indexlocation')->name('admin.aboutus.location');
+        Route::post('/aboutus/location/add', 'AboutusController@addlocation')->name('admin.aboutus.location.add');
     
-        Route::get('/aboutus/missionandvision', 'AboutUsController@indexmissionandvision')->name('admin.aboutus.missionandvision');
-        Route::post('/aboutus/missionandvision/add', 'AboutUsController@addmissionandvision')->name('admin.aboutus.missionandvision.add');
+        Route::get('/aboutus/missionandvision', 'AboutusController@indexmissionandvision')->name('admin.aboutus.missionandvision');
+        Route::post('/aboutus/missionandvision/add', 'AboutusController@addmissionandvision')->name('admin.aboutus.missionandvision.add');
                  
-        Route::get('/aboutus/municipalityseal', 'AboutUsController@indexmunicipalityseal')->name('admin.aboutus.municipalityseal');
-        Route::post('/aboutus/municipalityseal/add', 'AboutUsController@addmunicipalityseal')->name('admin.aboutus.municipalityseal.add');
+        Route::get('/aboutus/municipalityseal', 'AboutusController@indexmunicipalityseal')->name('admin.aboutus.municipalityseal');
+        Route::post('/aboutus/municipalityseal/add', 'AboutusController@addmunicipalityseal')->name('admin.aboutus.municipalityseal.add');
 
-        Route::get('/aboutus/servicepledge', 'AboutUsController@indexservicepledge')->name('admin.aboutus.servicepledge');
-        Route::post('/aboutus/servicepledge/add', 'AboutUsController@addservicepledge')->name('admin.aboutus.servicepledge.add');
+        Route::get('/aboutus/servicepledge', 'AboutusController@indexservicepledge')->name('admin.aboutus.servicepledge');
+        Route::post('/aboutus/servicepledge/add', 'AboutusController@addservicepledge')->name('admin.aboutus.servicepledge.add');
 
-        Route::get('/aboutus/mandate', 'AboutUsController@indexmandate')->name('admin.aboutus.mandate');
-        Route::post('/aboutus/mandate/add', 'AboutUsController@addmandate')->name('admin.aboutus.mandate.add');
+        Route::get('/aboutus/mandate', 'AboutusController@indexmandate')->name('admin.aboutus.mandate');
+        Route::post('/aboutus/mandate/add', 'AboutusController@addmandate')->name('admin.aboutus.mandate.add');
 
-        Route::get('/aboutus/directory', 'AboutUsController@indexdirectory')->name('admin.aboutus.directory');
-        Route::post('/aboutus/directory/add', 'AboutUsController@adddirectory')->name('admin.aboutus.directory.add');
+        Route::get('/aboutus/directory', 'AboutusController@indexdirectory')->name('admin.aboutus.directory');
+        Route::post('/aboutus/directory/add', 'AboutusController@adddirectory')->name('admin.aboutus.directory.add');
 
         //Admin Dashboard Careers
         Route::get('/careers/jobvacancies', 'CareersController@indexjobvacancies')->name('admin.careers.jobvacancies');

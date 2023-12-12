@@ -43,7 +43,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
      //Others
      Route::get('/others/downloadableforms', 'Frontend\OthersController@indexdownloadableforms')->name('others.downloadableforms');
      Route::get('/others/gallery', 'Frontend\OthersController@indexgallery')->name('others.gallery');
-     Route::get('/others/memorandom', 'Frontend\OthersController@indexmemorandom')->name('others.memorandom');
+     Route::get('/others/memorandum', 'Frontend\OthersController@indexmemorandum')->name('others.memorandum');
      
 
     //Logout Routes
@@ -123,7 +123,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::get('/others/gallery', 'OthersController@indexgallery')->name('admin.others.gallery');
         Route::post('/others/gallery/add', 'OthersController@addgallery')->name('admin.others.gallery.add');
 
-        Route::get('/others/memorandom', 'OthersController@indexmemorandom')->name('admin.others.memorandom');
-        Route::post('/others/memorandom/add', 'OthersController@addmemorandom')->name('admin.others.memorandom.add');
+        Route::get('/others/memorandum', 'OthersController@indexmemorandum')->name('admin.others.memorandum');
+        Route::post('/others/memorandum/add', 'OthersController@addmemorandum')->name('admin.others.memorandum.add');
     }); 
 });

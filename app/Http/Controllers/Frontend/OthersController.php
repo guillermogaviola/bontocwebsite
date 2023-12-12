@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Others_downloadableforms;
 use App\Models\Others_gallery;
-use App\Models\Others_memorandom;
+use App\Models\Others_memorandum;
 
 class OthersController extends Controller
 {
@@ -28,11 +28,11 @@ class OthersController extends Controller
     }
 
 
-    public function indexmemorandom()
+    public function indexmemorandum()
     {
-        $memorandom = Others_memorandom::first();
-        return view('frontend.others.memorandom.index',[
-                'memorandom' => $memorandom
+        $memorandum = Others_memorandum::first();
+        return view('frontend.others.memorandum.index',[
+                'memorandum' => $memorandum
         ]);
     }
 

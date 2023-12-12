@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Others_downloadableforms;
 use App\Models\Others_gallery;
-use App\Models\Others_memorandom;
+use App\Models\Others_memorandum;
 
 class OthersController extends Controller
 {
@@ -57,24 +57,24 @@ class OthersController extends Controller
         return redirect()->back();
     }
 
-   public function indexmemorandom() 
+   public function indexmemorandum() 
     {
-        $memorandom = Others_memorandom::first();
-        return view('admin.others.memorandom.index',[
-                'memorandom' => $memorandom
+        $memorandum = Others_memorandum::first();
+        return view('admin.others.memorandum.index',[
+                'memorandum' => $memorandum
         ]);
     }
 
-   public function addmemorandom(Request $request) 
+   public function addmemorandum(Request $request) 
     {
         if ($request->id) {
-            $update = Others_memorandom::find($request->id);
+            $update = Others_memorandum::find($request->id);
             $update->title = $request->title;
             $update->description = $request->description;
             
             $update->save();
         } else {
-            $formsave = new Others_memorandom();
+            $formsave = new Others_memorandum();
             $formsave->title = $request->title;
             $formsave->description = $request->description;
 

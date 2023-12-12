@@ -83,7 +83,7 @@
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="{{route('others.downloadableforms')}}" class="dropdown-item">Downloadable Forms</a>
                             <a href="{{route('others.gallery')}}" class="dropdown-item">Gallery</a>
-                            <a href="{{route('others.memorandom')}}" class="dropdown-item">Memorandom</a>
+                            <a href="{{route('others.memorandom')}}" class="dropdown-item">Memorandum</a>
                         </div>
                     </div>
                 </div>

@@ -184,7 +184,7 @@
 			<ul class="submenu-list list-unstyled">
 				<li class="submenu-item"><a class="submenu-link" href="{{route('admin.others.downloadableforms')}}">Downloadable Forms</a></li>
 				<li class="submenu-item"><a class="submenu-link" href="{{route('admin.others.gallery')}}">Gallery</a></li> 
-				<li class="submenu-item"><a class="submenu-link" href="{{route('admin.others.memorandom')}}">Memorandom</a></li>
+				<li class="submenu-item"><a class="submenu-link" href="{{route('admin.others.memorandom')}}">Memorandum</a></li>
 			</ul>
 		</div>
 	</li>

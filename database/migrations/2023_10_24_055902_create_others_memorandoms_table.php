@@ -11,7 +11,7 @@ return new class extends Migration
      */
      public function up(): void
     {
-        Schema::create('others_memorandums', function (Blueprint $table) {
+        Schema::create('others_memorandoms', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->text('description');
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('others_memorandums');
+        Schema::dropIfExists('others_memorandoms');
     }
 };

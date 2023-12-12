@@ -6,7 +6,7 @@
             @csrf
             <div class="row card p-5">
                 <div class="bg-light p-5 rounded">
-                    <h2>memorandom</h2>
+                    <h2>memorandum</h2>
                 </div>
                 <div class="col-sm-12">
                     <div class="form-group">

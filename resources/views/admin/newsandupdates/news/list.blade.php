@@ -1,0 +1,43 @@
+@extends('layouts.default')
+
+@section('content')
+    <div class="container">
+      <form>
+            <div class="card-body">
+              <h5 class="card-title">
+                News
+                <a href="{{ route('admin.newsandupdates.news.add') }}" class="btn btn-success text-white" style="float: right; margin-top: 5px;">Add News</a>
+              </h5><br><br>
+              <table class="table table-light">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Is Featured</th>
+                    <th scope="col">Date Posted</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td>
+                    <img src="" style="height: 50px; width: 50px;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <a href="{{ route('admin.newsandupdates.news.edit') }}" class="btn btn-success btn-sm text-white">Edit</a>
+                      <a onclick="return confirm('Are you sure you want to delete records?');" href="" class="btn btn-danger btn-sm text-white">Delete</a>
+                    </td>
+                  </tr>
+                  </tbody>
+              </table><br><br>
+              </div>
+              </form>
+            </div>
+@endsection

@@ -74,7 +74,7 @@
         <h5>Public Sector Links</h5>
             <ul>
                 <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://www.gov.ph/">GOV.PH</a></li>
-                <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://cscro8.weebly.com/">Civil Service Commision Region 8</a></li>
+                <!-- <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://cscro8.weebly.com/">Civil Service Commision Region 8</a></li> -->
                 <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://www.officialgazette.gov.ph/">Republic of the Philippines Official Gazette</a></li>
                 <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="https://op-proper.gov.ph/">Office of the President</a></li>
                 <li><a style="font-family: Helvetica;" class="text-light" target="_blank" href="http://legacy.senate.gov.ph/">Senate of the Philippines</a></li>

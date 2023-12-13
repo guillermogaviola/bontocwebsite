@@ -4,53 +4,54 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\NewsandUpdates_news;
-use App\Models\NewsandUpdates_upcomingupdates;
-
+use Str;
 
 class NewsandUpdatesController extends Controller
 {
-    public function indexnews() 
+
+	public function addnews() 
     {
-        $news = newsandupdates_news::all();
-        return view('admin.newsandupdates.news.index',[
-                'news' => $news
-        ]);
+        return view('admin.newsandupdates.news.add');
     }
 
-    public function addnews(Request $request) 
+    public function insertnews(Request $request) 
     {
-            $formsave = new NewsandUpdates_news();
-            $formsave->title = $request->title;
-            $formsave->description = $request->description;
-            $formsave->status = $request->status;
-            $formsave->date_posted = $request->date_posted;
+        $save = new NewsandUpdates_news;
+    	$save->id 			    = $request->id;
+    	$save->title 			= $request->title;
+    	$save->description 		= $request->description;
+    	$save->status 			= $request->status;
+    	$save->date_posted 		= $request->date_posted;
+    	$save->save();
 
-            $target_dir = "resources/img/news/";
-            $target_file = $target_dir . basename($_FILES["image_file"]["name"]);
-            $uploadOk = 1;
-            $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    	$target_dir = "uploads/";
+		$target_file = $target_dir . basename($_FILES["image_file"]["name"]);
+		$uploadOk = 1;
+		$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+		if(isset($_POST["submit"])) {
+		  $check = getimagesize($_FILES["image_file"]["tmp_name"]);
+		  if($check !== false) {
+		    echo "File is an image - " . $check["mime"] . ".";
+		    $uploadOk = 1;
+		  } else {
+		    echo "File is not an image.";
+		    $uploadOk = 0;
+		  }
+}
 
-            $formsave->save();
-
-        return redirect()->back();
+    		return redirect('admin/newsandupdates/news/add')->with('success', 'News successfully uploaded to news feature.');
     }
 
-    public function indexupcomingupdates() 
+    public function listnews() 
     {
-        $upcomingupdates = NewsandUpdates_upcomingupdates::all();
-        return view('admin.newsandupdates.upcomingupdates.index',[
-                'upcomingupdates' => $upcomingupdates
-        ]);
+        return view('admin.newsandupdates.news.list');
     }
 
-    public function addupcomingupdates(Request $request) 
+    public function editnews() 
     {
-            $formsave = new NewsandUpdates_upcomingupdates();
-            $formsave->title = $request->title;
-            $formsave->description = $request->description;
-            
-            $formsave->save();
-    
-        return redirect()->back();
+        return view('admin.newsandupdates.news.edit');
     }
+
+
+
 }

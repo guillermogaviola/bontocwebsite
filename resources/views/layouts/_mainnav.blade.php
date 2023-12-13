@@ -75,7 +75,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Careers</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="{{ route('careers.jobvacancies')}}" class="dropdown-item">Job Vacancies</a>
+                            <a target="_blank" href="https://cscro8.weebly.com/december-2021-bulletin-of-vacant-position.html" class="dropdown-item">Job Vacancies</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -87,12 +87,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="input-group ml-auto" style="width: 100%; max-width: 150px;">
+                <!-- <div class="input-group ml-auto" style="width: 100%; max-width: 150px;">
                     <input type="text" class="form-control" placeholder="Search">
                     <div class="input-group-append">
                         <button class="input-group-text text-success"><i class="fa fa-search"></i></button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </nav>
     </div>

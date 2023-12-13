@@ -5,6 +5,7 @@ use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\NewsandUpdatesController;
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 { 
@@ -66,7 +67,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
             Route::get('dashboard', 'DashboardController@dashboard')->name('dashboard');
 
         // Home
-            Route::get('dashboard/home', [DashboardController::class, 'home']);
+            Route::get('home', [DashboardController::class, 'home']);
 
         //Admin Dashboard About Us
         Route::get('/aboutus/history', 'AboutusController@indexhistory')->name('admin.aboutus.history');
@@ -103,9 +104,12 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
         Route::post('/tourism/bontocattractions/add', 'TourismController@addbontocattractions')->name('admin.tourism.bontocattractions.add');
 
-        //Admin News and Updates Others
-        Route::get('/newsandupdates/news', 'NewsandUpdatesController@indexnews')->name('admin.newsandupdates.news');
-        Route::post('/newsandupdates/news/add', 'NewsandUpdatesController@addnews')->name('admin.newsandupdates.news.add');
+        //Admin News and Updates
+        Route::get('/newsandupdates/news/add', 'NewsandUpdatesController@addnews')->name('admin.newsandupdates.news.add');
+        Route::post('/newsandupdates/news/add', 'NewsandUpdatesController@insertnews')->name('admin.newsandupdates.news.insert');
+        Route::get('/newsandupdates/news/list', 'NewsandUpdatesController@listnews')->name('admin.newsandupdates.news.list');
+        Route::get('/newsandupdates/news/edit', 'NewsandUpdatesController@editnews')->name('admin.newsandupdates.news.edit');
+        
 
         Route::get('/newsandupdates/upcomingupdates', 'NewsandUpdatesController@indexupcomingupdates')->name('admin.newsandupdates.upcomingupdates');
         Route::post('/newsandupdates/upcomingupdates/add', 'NewsandUpdatesController@addupcomingupdates')->name('admin.newsandupdates.upcomingupdates.add');

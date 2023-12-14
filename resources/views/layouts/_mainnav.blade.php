@@ -57,6 +57,7 @@
                             <a href="{{route('services.mayorsoffice')}}" class="dropdown-item">Mayor's Office</a>
                             <a href="{{route('services.citizenscharter')}}" class="dropdown-item">Citizen's Charter</a>
                             <a class="dropdown-item" target="_black" href="https://bomwasa.bitsorg.info/billinquiry">BOMWASA</a>
+                            <a class="dropdown-item" target="_black" href="https://hrmis.bitsorg.info/login">EIS</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">

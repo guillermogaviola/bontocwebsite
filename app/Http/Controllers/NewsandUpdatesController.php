@@ -9,49 +9,45 @@ use Str;
 class NewsandUpdatesController extends Controller
 {
 
-	public function addnews() 
+	public function addnews(Request $request) 
     {
-        return view('admin.newsandupdates.news.add');
-    }
-
-    public function insertnews(Request $request) 
-    {
-        $save = new NewsandUpdates_news;
-    	$save->id 			    = $request->id;
-    	$save->title 			= $request->title;
-    	$save->description 		= $request->description;
-    	$save->status 			= $request->status;
-    	$save->date_posted 		= $request->date_posted;
-    	$save->save();
-
-    	$target_dir = "uploads/";
-		$target_file = $target_dir . basename($_FILES["image_file"]["name"]);
-		$uploadOk = 1;
-		$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-		if(isset($_POST["submit"])) {
-		  $check = getimagesize($_FILES["image_file"]["tmp_name"]);
-		  if($check !== false) {
-		    echo "File is an image - " . $check["mime"] . ".";
-		    $uploadOk = 1;
-		  } else {
-		    echo "File is not an image.";
-		    $uploadOk = 0;
-		  }
-}
-
-    		return redirect('admin/newsandupdates/news/add')->with('success', 'News successfully uploaded to news feature.');
+        $data['getrecord'] = NewsandUpdates_news::all();
+        return view('admin.newsandupdates.news.add', $data);
     }
 
     public function listnews() 
-    {
-        return view('admin.newsandupdates.news.list');
+    {   
+        $data = NewsandUpdates_news::paginate(10);
+        return view('admin.newsandupdates.news.list', [
+                'news' => $data
+        ]);
     }
 
-    public function editnews() 
+    
+
+    public function insertnews(Request $request) 
     {
-        return view('admin.newsandupdates.news.edit');
+        // dd($request->all());
+
+        $insertRecord                   = new NewsandUpdates_news;
+    	$insertRecord->id 			    = $request->id;
+    	$insertRecord->title 			= $request->title;
+    	$insertRecord->description 		= $request->description;
+    	$insertRecord->status 			= $request->status;
+    	$insertRecord->date_posted 		= $request->date_posted;
+
+        if(! empty($request->file('image_file'))){
+            $file = $request->file('image_file');
+            $randomStr = Str::random(30);
+            $filename = $randomStr . '.' . $file->
+                    getClientOriginalExtension();
+            $file->move('uploads/',$filename);
+            $insertRecord->image_file = $filename;
+
+        }
+
+        $insertRecord->save();
+
+        return redirect('admin/newsandupdates/news/list')->with('success', 'News successfully uploaded to news feature.');
     }
-
-
-
 }

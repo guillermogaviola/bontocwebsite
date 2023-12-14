@@ -106,9 +106,12 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
         //Admin News and Updates
         Route::get('/newsandupdates/news/add', 'NewsandUpdatesController@addnews')->name('admin.newsandupdates.news.add');
+        Route::get('/newsandupdates/news/list', 'NewsandUpdatesController@list')->name('admin.newsandupdates.news.list');
+        // Route::get('/newsandupdates/news/list', 'NewsandUpdatesController@addnews')->name('admin.newsandupdates.news.list');
+        Route::get('/newsandupdates/news/{id}', 'NewsandUpdatesController@addnews')->name('admin.newsandupdates.news');
         Route::post('/newsandupdates/news/add', 'NewsandUpdatesController@insertnews')->name('admin.newsandupdates.news.insert');
         Route::get('/newsandupdates/news/list', 'NewsandUpdatesController@listnews')->name('admin.newsandupdates.news.list');
-        Route::get('/newsandupdates/news/edit', 'NewsandUpdatesController@editnews')->name('admin.newsandupdates.news.edit');
+        // Route::get('/newsandupdates/news/edit', 'NewsandUpdatesController@editnews')->name('admin.newsandupdates.news.edit');
         
 
         Route::get('/newsandupdates/upcomingupdates', 'NewsandUpdatesController@indexupcomingupdates')->name('admin.newsandupdates.upcomingupdates');

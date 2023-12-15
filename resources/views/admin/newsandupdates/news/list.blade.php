@@ -4,6 +4,7 @@
     <div class="container">
       <form>
             <div class="card-body">
+              @include('layouts.partials.message')
               <h5 class="card-title">
                 News
                 <a href="{{ route('admin.newsandupdates.news.add') }}" class="btn btn-success text-white" style="float: right; margin-top: 5px;">Add News</a>
@@ -37,8 +38,8 @@
                     <td>{{ $value->date_posted }}</td>
                     <td></td>
                     <td>
-                      <a href="{{ route('admin.newsandupdates.news.add') }}" class="btn btn-success btn-sm text-white">Edit</a>
-                      <a onclick="return confirm('Are you sure you want to delete records?');" href="" class="btn btn-danger btn-sm text-white">Delete</a>
+                      <a href="{{ url('admin/newsandupdates/news/edit/{$id}') }}" class="btn btn-success btn-sm text-white">Edit</a>
+                      <a onclick="return confirm('Are you sure you want to delete records?');" href="{{ url('admin/newsandupdates/news/delete/'.$value->id) }}" class="btn btn-danger btn-sm text-white">Delete</a>
                     </td>
                   </tr>
                   @endforeach

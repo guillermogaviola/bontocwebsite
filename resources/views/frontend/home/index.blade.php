@@ -83,20 +83,22 @@
                                 <a class="text-secondary font-weight-medium text-decoration-none" href="#">View All</a>
                             </div>
                         </div>
+                        @foreach($getrecord as $value)
                         <div class="col-lg-2">
                             <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395160674_302999195830491_8889843830936073855_n.jpg') }}" style="object-fit: cover;">
+                                <img class="img-fluid w-100" src="{{ url('public/home/'.$value->image) }}" style="object-fit: cover;">
                                 <div class="overlay position-relative bg-light">
                                     <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">World Mental Health Month</a>
+                                        <a href="">{{ $value->title }}</a>
                                         <span class="px-1">/</span>
-                                        <span>October 27, 2023</span>
+                                        <span>{{ $value->date_posted }}</span>
                                     </div>
-                                    <a class="h6" href="">Bontoc, October 26, 2023 - The Municipality of Bontoc, under the</a>
+                                    <a class="h6" href="">{!! $value->description !!}</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2">
+                        @endforeach
+                        <!-- <div class="col-lg-2">
                             <div class="position-relative mb-3">
                                 <img class="img-fluid w-100" src="{{ asset('resources/img/WorldMentalHealthMonth/395291630_302999219163822_3887051330293934413_n.jpg') }}" style="object-fit: cover;">
                                 <div class="overlay position-relative bg-light">
@@ -343,7 +345,10 @@
                               </ul>
                             </nav>
                         </div>
-                    </div>
+                    </div> -->
+
+
+
                 </div>
             </div>
         </div>

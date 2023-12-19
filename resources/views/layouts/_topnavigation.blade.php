@@ -120,7 +120,7 @@
 <div id="submenu-5" class="collapse submenu submenu-5" data-bs-parent="#menu-accordion">
 	<ul class="submenu-list list-unstyled">
 		<li class="submenu-item"><a class="submenu-link" href="{{route('admin.newsandupdates.news.list')}}">News</a></li>
-		<li class="submenu-item"><a class="submenu-link" href="{{route('admin.newsandupdates.upcomingupdates')}}">Upcoming Updates</a></li>
+		<li class="submenu-item"><a class="submenu-link" href="{{route('admin.newsandupdates.upcomingupdates.list')}}">Upcoming Updates</a></li>
 	</ul>
 </div>
 </li>
@@ -182,9 +182,9 @@
 		</a>
 		<div id="submenu-8" class="collapse submenu submenu-8" data-bs-parent="#menu-accordion">
 			<ul class="submenu-list list-unstyled">
-				<li class="submenu-item"><a class="submenu-link" href="{{route('admin.others.downloadableforms')}}">Downloadable Forms</a></li>
-				<li class="submenu-item"><a class="submenu-link" href="{{route('admin.others.gallery')}}">Gallery</a></li> 
-				<li class="submenu-item"><a class="submenu-link" href="{{route('admin.others.memorandom')}}">Memorandum</a></li>
+				<li class="submenu-item"><a class="submenu-link" href="{{ route('admin.others.downloadableforms') }}">Downloadable Forms</a></li>
+				<li class="submenu-item"><a class="submenu-link" href="{{ route('admin.others.gallery') }}">Gallery</a></li> 
+				<li class="submenu-item"><a class="submenu-link" href="{{ route('admin.others.memorandom') }}">Memorandum</a></li>
 			</ul>
 		</div>
 	</li>

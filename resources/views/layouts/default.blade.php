@@ -43,24 +43,13 @@
     
     <!-- Page Specific JS -->
     <script src="{{asset('assets/js/app.js')}}"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.6.0/tinymce.min.js"></script> -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.6.0/skins/content/dark/content.min.css" rel="stylesheet"> -->
     <script src="https://cdn.tiny.cloud/1/j6jyevgfkgy3vv3q07cghue0zelbvktjfcyangfmr33vja2s/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
-
       tinymce.init({
         selector: 'textarea',
         plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
         toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
       });
     </script>
-    <!-- <script>
-        tinymce.init({
-            selector: '#myTextarea',
-            plugins: 'advlist autolink lists link image imagetools media table paste',
-            toolbar: 'undo redo | formatselect | bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | link image media table',
-            menubar: false,
-          });
-    </script> -->
 </body>
 </html>

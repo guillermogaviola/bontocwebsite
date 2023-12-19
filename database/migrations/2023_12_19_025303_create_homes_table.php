@@ -11,8 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('newsand_updates_news', function (Blueprint $table) {
+        Schema::create('homes', function (Blueprint $table) {
+            $table->increments('id');
             $table->date('date_posted')->format('m/d/Y');
+            $table->string('title');
+            $table->string('image')->nullable();
+            $table->longText('description')->nullable();
+
         });
     }
 
@@ -21,8 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('newsand_updates_news', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('homes');
     }
 };

@@ -10,9 +10,4 @@ class DashboardController extends Controller
     {
         return view('admin.dashboard');
     }
-
-    public function home()
-    {
-    	return view('admin.home');
-    }
 }

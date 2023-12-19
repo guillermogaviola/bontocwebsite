@@ -36,7 +36,7 @@ class OthersController extends Controller
     public function indexgallery() 
     {
         $gallery = Others_gallery::first();
-        return view('admin.others.gallery.index',[
+        return view('admin.others.gallery.list',[
                 'gallery' => $gallery
         ]);
     }

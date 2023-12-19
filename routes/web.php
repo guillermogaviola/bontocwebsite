@@ -6,6 +6,7 @@ use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\NewsandUpdatesController;
+use App\Http\Controllers\HomepageController;
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 { 
@@ -67,7 +68,13 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
             Route::get('dashboard', 'DashboardController@dashboard')->name('dashboard');
 
         // Home
-            Route::get('home', [DashboardController::class, 'home']);
+        Route::get('home', [HomepageController::class, 'home']);
+        Route::get('home/add', [HomepageController::class, 'home_add']);
+        Route::post('home/add', [HomepageController::class, 'home_add_post']);
+        Route::post('home/add', [HomepageController::class, 'home_add_post']);
+        Route::get('home/edit/{id}', [HomepageController::class, 'home_edit']);
+        Route::post('home/edit/{id}', [HomepageController::class, 'home_edit_post']);
+        Route::get('home/delete/{id}', [HomepageController::class, 'home_delete']);
 
         //Admin Dashboard About Us
         Route::get('/aboutus/history', 'AboutusController@indexhistory')->name('admin.aboutus.history');
@@ -115,8 +122,18 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::post('/newsandupdates/news/edit/{id}', 'NewsandUpdatesController@updatenews')->name('admin.newsandupdates.news.edit.update');
         Route::get('/newsandupdates/news/delete/{id}', 'NewsandUpdatesController@deletenews')->name('admin.newsandupdates.news.edit.delete');
 
-        Route::get('/newsandupdates/upcomingupdates', 'NewsandUpdatesController@indexupcomingupdates')->name('admin.newsandupdates.upcomingupdates');
-        Route::post('/newsandupdates/upcomingupdates/add', 'NewsandUpdatesController@addupcomingupdates')->name('admin.newsandupdates.upcomingupdates.add');
+        Route::get('/newsandupdates/upcomingupdates/add', 'NewsandUpdatesController@addnews')->name('admin.newsandupdates.upcomingupdates.add');
+        Route::get('/newsandupdates/upcomingupdates/list', 'NewsandUpdatesController@list')->name('admin.newsandupdates.upcomingupdates.list');
+        // Route::get('/newsandupdates/upcomingupdates/list', 'NewsandUpdatesController@addnews')->name('admin.newsandupdates.upcomingupdates.list');
+        Route::get('/newsandupdates/upcomingupdates/{id}', 'NewsandUpdatesController@addupcomingupdates')->name('admin.newsandupdates.upcomingupdates');
+        Route::post('/newsandupdates/upcomingupdates/add', 'NewsandUpdatesController@insertupcomingupdates')->name('admin.newsandupdates.upcomingupdates.insert');
+        Route::get('/newsandupdates/upcomingupdates/list', 'NewsandUpdatesController@listupcomingupdates')->name('admin.newsandupdates.upcomingupdates.list');
+        Route::get('/newsandupdates/upcomingupdates/edit/{id}', 'NewsandUpdatesController@editupcomingupdates')->name('admin.newsandupdates.upcomingupdates.edit');
+        Route::post('/newsandupdates/upcomingupdates/edit/{id}', 'NewsandUpdatesController@updateupcomingupdates')->name('admin.newsandupdates.upcomingupdates.edit.update');
+        Route::get('/newsandupdates/upcomingupdates/delete/{id}', 'NewsandUpdatesController@deleteupcomingupdates')->name('admin.newsandupdates.upcomingupdates.edit.delete');
+
+        // Route::get('/newsandupdates/upcomingupdates', 'NewsandUpdatesController@indexupcomingupdates')->name('admin.newsandupdates.upcomingupdates');
+        // Route::post('/newsandupdates/upcomingupdates/add', 'NewsandUpdatesController@addupcomingupdates')->name('admin.newsandupdates.upcomingupdates.add');
 
         //Admin Dashboard Transparency
         Route::get('/transparency/municipalordinances', 'TransparencyController@indexmunicipalordinances')->name('admin.transparency.municipalordinances');
@@ -133,5 +150,12 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
         Route::get('/others/memorandom', 'OthersController@indexmemorandom')->name('admin.others.memorandom');
         Route::post('/others/memorandom/add', 'OthersController@addmemorandom')->name('admin.others.memorandom.add');
+
+        // Gallery
+
+        Route::get('gallery' , [AuthController::class, 'gallery']);
+
+
+
     }); 
 });

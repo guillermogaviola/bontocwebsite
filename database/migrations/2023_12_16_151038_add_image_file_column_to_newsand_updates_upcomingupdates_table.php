@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('newsand_updates_news', function (Blueprint $table) {
-            $table->date('date_posted')->format('m/d/Y');
+        Schema::table('newsand_updates_upcomingupdates', function (Blueprint $table) {
+            $table->string('image_file')->nullable();
         });
     }
 
@@ -21,7 +21,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('newsand_updates_news', function (Blueprint $table) {
+        Schema::table('newsand_updates_upcomingupdates', function (Blueprint $table) {
             //
         });
     }

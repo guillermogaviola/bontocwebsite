@@ -35,13 +35,13 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="{{route('about.location')}}" class="dropdown-item">Location</a>
+                            <a href="{{route('about.directory')}}" class="dropdown-item">Directory</a>
                             <a href="{{route('about.history')}}" class="dropdown-item">History</a>
+                            <a href="{{route('about.location')}}" class="dropdown-item">Location</a>
+                            <a href="{{route('about.mandate')}}" class="dropdown-item">Mandate</a>
                             <a href="{{route('about.missionandvision')}}" class="dropdown-item">Mission and Vision</a>
                             <a href="{{route('about.municipalityseal')}}" class="dropdown-item">Municipality Seal</a>
-                            <a href="{{route('about.mandate')}}" class="dropdown-item">Mandate</a>
                             <a href="{{route('about.servicepledge')}}" class="dropdown-item">Service Pledge</a>
-                            <a href="{{route('about.directory')}}" class="dropdown-item">Directory</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -54,10 +54,13 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="{{route('services.mayorsoffice')}}" class="dropdown-item">Mayor's Office</a>
+                            <a class="dropdown-item" target="_black" href="https://brgyprofiling.bitsorg.info/login">Barangay Inhabitant Information System</a>
+                            <a class="dropdown-item" target="_black" href="https://bomwasa.bitsorg.info/billinquiry">Bontoc Municipal Waterworks System  Administration (BOMWASA)</a>
                             <a href="{{route('services.citizenscharter')}}" class="dropdown-item">Citizen's Charter</a>
-                            <a class="dropdown-item" target="_black" href="https://bomwasa.bitsorg.info/billinquiry">BOMWASA</a>
-                            <a class="dropdown-item" target="_black" href="https://hrmis.bitsorg.info/login">EIS</a>
+                            <a class="dropdown-item" target="_black" href="https://hrmis.bitsorg.info/login">Document Tracking System</a>
+                            <a class="dropdown-item" target="_black" href="https://hrmis.bitsorg.info/login">Employee Information System</a>
+                            <a href="{{route('services.mayorsoffice')}}" class="dropdown-item">Mayor's Office</a>
+                            <a class="dropdown-item" target="_black" href=""></a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -71,6 +74,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tourism</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="{{route('tourism.bontocattractions')}}" class="dropdown-item">Bontoc Attractions</a>
+                            <a target="_blank" href="https://www.facebook.com/BontocTourismOffice" class="dropdown-item">Bontoc Tourism Facebook Page</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">

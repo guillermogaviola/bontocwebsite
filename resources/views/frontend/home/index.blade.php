@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('resources/img/tourism/anahaocave/anahaocave1.jpg')}}" class="img-fluid" style="width: 100%; height: 100%;">
+                    <img src="{{asset('resources/img/tourism/anahaocave/anahaocave1.jpg')}}" class="img-fluid" style="width: 100%; height: 200%;">
                     <div class="carousel-caption">
                       <h3 style="color: white; font-family: Helvetica;">Anahao Cave</h3>
                       <p style="color: white;" >Brgy. Anahao, Bontoc, Southern Leyte</p>

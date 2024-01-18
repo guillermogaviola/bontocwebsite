@@ -91,16 +91,15 @@
     <div class="col-sm-12 col-lg-4 text-light">
         <h5>Important Matters</h5>
                 <ul>
-                <li><a style="font-family: Helvetica;" class="text-light" href="">Terms and Conditions</a></li>
+               <!--  <li><a style="font-family: Helvetica;" class="text-light" href="">Terms and Conditions</a></li>
                 <li><a style="font-family: Helvetica;" class="text-light" href="">Privacy Policy</a></li>
                 <li><a style="font-family: Helvetica;" class="text-light" href="">Cultural Mapping</a></li>
-                <li><a style="font-family: Helvetica;" class="text-light" href="">Legislations</a></li>
-            </ul>
+                <li><a style="font-family: Helvetica;" class="text-light" href="">Legislations</a></li> -->
+                </ul>
         <br>
             <div>
-                <a href="#"><img height="100" width="100" src="{{ asset('resources/img/transparency-seal.png')}}
-                "></a>
-                <a href="#"><img height="100" width="100" src="{{ asset('resources/img/bontoclogonobg.png')}}"></a>
+                <a href="#"><img height="100px" width="100px" src="{{ asset('resources/img/transparencyseal.png') }}"></a>
+                <a href="#"><img height="100px" width="100px" src="{{ asset('resources/img/bontoclogonobg.png') }}"></a>
             </div>
         <br>
         <hr>
@@ -128,8 +127,7 @@
             </p>
     </div>
     <div class="container-fluid py-4 px-sm-3 px-md-5">
-        <p class="m-0 text-center">&copy; 
-        <a target="_blank" href="https://www.facebook.com" style="color: blue;">2024</a>. All Rights Reserved. Designed by
+        <p class="m-0 text-center">&copy;2024. All Rights Reserved. Designed by
         <a target="_blank" href="https://www.facebook.com/guillermogaviola.s" style="color: blue;">GuillermoSGaviola.</a>
         </p>
     </div>

@@ -22,7 +22,7 @@
 </style>
 
 <div class="row">
-    <div class="container-fluid p-0 mb-3">
+    <div class="container-fluid p-0 mb-2">
         <nav class="navbar navbar-expand-lg bg-success navbar-light py-2 py-lg-0 px-lg-5">
             <a href="" class="navbar-brand d-block d-lg-none">
             </a>

@@ -121,14 +121,17 @@
         <p style="color: white;">Contact Number:<br>+63-9566483040</p>
         <p style="color: white;" >Socials</p>
             <p>
-                <a target="_blank" href="https://www.facebook.com/BontocPIO">
-                <img decoding="async" loading="lazy" class="alignnone wp-image-9481" src="{{ asset('resources/img/socialmedias/facebook.png') }}" style="width: 40px;">
-                </a>
+                <a target="_blank" href="#"><img height="25" width="25" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-youtube-circle-512.png"></a>
+                <a target="_blank" href="https://www.facebook.com/BontocPIO"><img height="25" width="25" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-facebook-circle-512.png"></a>
+                <a target="_blank" href="#"><img height="25" width="25" src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/instagram-512.png"></a>
+                <a target="_blank" href="#"><img height="25" width="25" src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/twitter-512.png"></a>
+                
             </p>
     </div>
     <div class="container-fluid py-4 px-sm-3 px-md-5">
-        <p class="m-0 text-center">&copy;2024. All Rights Reserved. Designed by
-        <a target="_blank" href="https://www.facebook.com/guillermogaviola.s" style="color: blue;">GuillermoSGaviola.</a>
+        <p class="m-0 text-center">&copy;The Official Website of Municipality Government of Bontoc. All Right Reserved 2024.
+        <p class="m-0 text-center">Developed by Southern Leyte State University - Bontoc Campus. Bontoc Information Technology Society Department (BITS) <br>
+        <a target="_blank" href="https://www.facebook.com/guillermogaviola.s" style="color: blue;">&copy;Guillermo S. Gaviola.</a>
         </p>
     </div>
     </div>

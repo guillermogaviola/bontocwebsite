@@ -131,7 +131,7 @@
     <div class="container-fluid py-4 px-sm-3 px-md-5">
         <p class="m-0 text-center">&copy;The Official Website of Municipality Government of Bontoc. All Right Reserved 2024.
         <p class="m-0 text-center">Developed by Southern Leyte State University - Bontoc Campus. Bontoc Information Technology Society Department (BITS) <br>
-        <a target="_blank" href="https://www.facebook.com/guillermogaviola.s" style="color: blue;">&copy;Guillermo S. Gaviola.</a>
+        <a target="_blank" href="https://www.facebook.com/guillermogaviola.s" style="color: blue;">&copy;Guillerms.</a>
         </p>
     </div>
     </div>

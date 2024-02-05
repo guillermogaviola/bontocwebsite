@@ -60,7 +60,7 @@
                             <a class="dropdown-item" target="_black" href="https://hrmis.bitsorg.info/login">Document Tracking System</a>
                             <a class="dropdown-item" target="_black" href="https://hrmis.bitsorg.info/login">Employee Information System</a>
                             <a href="{{route('services.mayorsoffice')}}" class="dropdown-item">Mayor's Office</a>
-                            <a class="dropdown-item" target="_black" href=""></a>
+                            <a class="dropdown-item" target="_black" href="https://lgusupply.bitsorg.info/login">Supply Management System</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -83,9 +83,6 @@
                             <a target="_blank" href="https://cscro8.weebly.com/december-2021-bulletin-of-vacant-position.html" class="dropdown-item">Job Vacancies</a>
                         </div>
                     </div>
-                    <!-- <div>
-                        <a href="{{ route('')}}" class="nav-item nav-link">Environment</a>
-                    </div> -->
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Others</a>
                         <div class="dropdown-menu rounded-0 m-0">

@@ -54,6 +54,7 @@
                      <img style="width: 10%; float: left; padding-right: 5px; margin-bottom: 4%; position: relative;" src="{{asset('resources/img/bontoclogonobg.png')}}">
                         <h3 style="color: white; font-family: 'Helvetica'; margin-top: 10px; position: relative; text-shadow: 0 0 3px green, 0 0 5px green; ">Municipality of Bontoc</h3>
                         <p style="color: white; position: relative; text-shadow: 0 0 3px green, 0 0 5px green;">Brgy. Poblacion, Bontoc, Southern Leyte, Philippines, 6604</p>
+                        <h6 style="color: white; position: relative; text-shadow: 0 0 3px green, 0 0 5px green;">TINUORAY NGA SERBISYO, TINUORAY NGA ASENSO!</h6> 
                 </div>
                 <div class="col-sm-2" >
                     <p  style="color: white; padding-right: -1px;">Philippine Standard Time <iframe src="https://oras.pagasa.dost.gov.ph/time_display/time/" allowtransparency="true" scrolling="no" frameborder="0" height="30px" width="100%"></iframe></p>

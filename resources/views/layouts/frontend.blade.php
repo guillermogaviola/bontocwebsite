@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('resources/img/bontoclogonobg.png')}}" sizes="32x32" />
+    <link rel="icon" href="{{ asset('resources/bontoclogonobg.png')}}" sizes="32x32" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href='https://fonts.googleapis.com'>
@@ -40,7 +40,7 @@
             bottom: 0;
             right: 0;
             margin: auto;
-            background: rgb(20 69 125 / 59%);
+            background: #f8f9fa4a;
             /*background: linear-gradient(179deg, rgba(0,48,103,1) 0%, rgba(0,212,255,0) 75%);*/
         }
         
@@ -51,10 +51,7 @@
         <div class="row" style="background-image: url('{{asset('resources/img/IMG20230719081550.jpg')}}'); background-repeat: no-repeat;background-position: center;background-size: 100% 300%;">
                 <div class="col-sm-10"> <br>
                     <div class="photo-overlay"></div>
-                     <img style="width: 10%; float: left; padding-right: 5px; margin-bottom: 4%; position: relative;" src="{{asset('resources/img/bontoclogonobg.png')}}">
-                        <h3 style="color: white; font-family: 'Helvetica'; margin-top: 10px; position: relative; text-shadow: 0 0 3px green, 0 0 5px green; ">Municipality of Bontoc</h3>
-                        <p style="color: white; position: relative; text-shadow: 0 0 3px green, 0 0 5px green;">Brgy. Poblacion, Bontoc, Southern Leyte, Philippines, 6604</p>
-                        <h6 style="color: white; position: relative; text-shadow: 0 0 3px green, 0 0 5px green;">TINUORAY NGA SERBISYO, TINUORAY NGA ASENSO!</h6> 
+                     <img style="    width: 43%;float: left; padding-right: 5px;margin-bottom: 2%;position: relative;" src="{{asset('resources/img/websitelogo.png')}}">   
                 </div>
                 <div class="col-sm-2" >
                     <p  style="color: white; padding-right: -1px;">Philippine Standard Time <iframe src="https://oras.pagasa.dost.gov.ph/time_display/time/" allowtransparency="true" scrolling="no" frameborder="0" height="30px" width="100%"></iframe></p>

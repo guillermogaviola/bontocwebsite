@@ -3,7 +3,6 @@
 <head>
     <title>Forgot Password | Municipality of Bontoc</title>
     
-    <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +11,8 @@
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
     <link rel="shortcut icon" href="{{ asset('assets/images/bontoclogo.png')}}"> 
     
-    <!-- FontAwesome JS-->
     <script defer src="assets/plugins/fontawesome/js/all.min.js"></script>
     
-    <!-- App CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/portal.css">
 
 </head>
@@ -33,7 +30,7 @@
 							<div class="email mb-3">
 								<label class="sr-only" for="reg-email">Your Email</label>
 								<input id="reg-email" name="reg-email" type="email" class="form-control login-email" placeholder="Your Email" required="required">
-							</div><!--//form-group-->
+							</div>
 							<div class="text-center">
 								<button type="submit" class="btn app-btn-primary btn-block theme-btn mx-auto">Reset Password</button>
 							</div>
@@ -51,8 +48,7 @@
 			        	<i class="fas fa-o" style="color: green;"></i>
 			        	<i class="fas fa-l" style="color: green;"></i>
 			        	<i class="fas fa-a" style="color: green;"></i>
-			        	<!--  by  -->
-			        	 <!-- <a class="app-link" href="#" target="_blank">BITS Developers</a> -->
+			        	
 			        	 </small>
 				    </div>
 			    </footer>	

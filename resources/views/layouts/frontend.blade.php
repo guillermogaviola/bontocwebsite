@@ -5,21 +5,21 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Favicon -->
+   
     <link rel="icon" href="{{ asset('resources/bontoclogonobg.png')}}" sizes="32x32" />
 
-    <!-- Google Web Fonts -->
+    
     <link rel="preconnect" href='https://fonts.googleapis.com'>
     <link rel="preconnect" href='https://fonts.gstatic.com' crossorigin>
     <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap' rel="stylesheet">   
 
-    <!-- Font Awesome -->
+    
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css' rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+
     <link href="{{ asset('resources/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
+   
     <link href="{{ asset('resources/css/style.css') }}" rel="stylesheet">
 
     <style>
@@ -53,6 +53,7 @@
                     <div class="photo-overlay"></div>
                      <img style="    width: 43%;float: left; padding-right: 5px;margin-bottom: 2%;position: relative;" src="{{asset('resources/img/websitelogo.png')}}">   
                 </div>
+
                 <div class="col-sm-2" >
                     <p  style="color: white; padding-right: -1px;">Philippine Standard Time <iframe src="https://oras.pagasa.dost.gov.ph/time_display/time/" allowtransparency="true" scrolling="no" frameborder="0" height="30px" width="100%"></iframe></p>
                 </div>
@@ -62,8 +63,6 @@
         @yield('content')
 
     </div>
-
-<!-- Footer Start -->
 <div class="container-fluid bg-success pt-5 px-sm-3 px-md-5">
     <div class="row">
         <div class="col-sm-12 col-lg-4 text-light">
@@ -136,19 +135,14 @@
     </div>
     </div>
 </div>
-<!--End Footer Start -->
 
-   <!-- Back to Top -->
     <a href="#" class="btn btn-info back-to-top"><i class="fa fa-angle-up"></i></a>
 
-
-    <!-- JavaScript Libraries -->
     <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
     <script src="{{ asset('resources/lib/easing/easing.min.js') }}"></script>
     <script src="{{ asset('resources/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
-    <!-- Contact Javascript File -->
     <script src="{{ asset('resources/mail/jqBootstrapValidation.min.js') }}"></script>
     <script src="{{ asset('resources/mail/contact.js') }}"></script>
 
